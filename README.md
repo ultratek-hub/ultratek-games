@@ -58,7 +58,8 @@ Feel free to remix, expand, or fork for your own creative systems.
   
 - ## 🔗 Scan to Visit ULTRATEK QR Portal
 
-![QR Code](qr-code.png)
+![QR Code](ultratek-qr-portal
+/qr code.png)
 
 
 - WhatsApp broadcast link
