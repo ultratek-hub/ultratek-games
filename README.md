@@ -16,7 +16,7 @@ This GitHub Pages site powers ULTRATEK’s QR destination—scanned from murals,
 Interactive grid explaining the meaning and placement of ULTRATEK’s mural glyphs.
 
 ### 📍 Location
-Aluta Marker, Last V’ing — FUTA Northgate, Akure  
+Aluta Marker, Last Wing — FUTA Northgate, Akure  
 Includes map link and directions.
 
 ### 📅 Launch Info
@@ -33,7 +33,7 @@ Includes map link and directions.
 1. Push all files to your GitHub repo
 2. Go to **Settings > Pages**
 3. Set source to `main` branch, `/root`
-4. Your site will be live at `https://ultratek-design.github.io/ultratek-qr-portal/`
+4. Your site will be live at `https://ultratek-games.github.io/ultratek-qr-portal/`
 
 ---
 
