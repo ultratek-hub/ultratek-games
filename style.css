@@ -1,78 +1,116 @@
-/* ULTRATEK QR Destination Styles */
-
+/* Base Reset */
 body {
   margin: 0;
-  font-family: 'Orbitron', sans-serif;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
   background-color: #0f0f0f;
-  color: #f5f5f5;
-  padding: 20px;
+  color: #f0f0f0;
+  line-height: 1.6;
 }
 
-header {
+/* Hero Section */
+.hero {
+  background-color: #1a1a1a;
+  padding: 2rem;
   text-align: center;
-  margin-bottom: 40px;
+  border-bottom: 2px solid #444;
 }
-
-h1 {
-  font-size: 2.5em;
-  color: #ffa500;
-  letter-spacing: 2px;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
-
-.tagline {
-  font-size: 1.2em;
+.hero p {
+  font-size: 1.2rem;
   color: #ccc;
-  margin-top: 10px;
 }
 
-.section {
-  margin-bottom: 40px;
-}
-
-h2 {
-  font-size: 1.5em;
-  color: #ffa500;
-  margin-bottom: 15px;
-}
-
-.glyph-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 20px;
+/* Navigation */
+nav {
+  background-color: #222;
+  padding: 1rem;
   text-align: center;
 }
-
-.glyph {
-  background: #1a1a1a;
-  padding: 15px;
-  border-radius: 8px;
-  border: 1px solid #333;
-  transition: transform 0.2s ease;
-}
-
-.glyph:hover {
-  transform: scale(1.05);
-  border-color: #ffa500;
-}
-
-.glyph-icon {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-a {
-  color: #ffa500;
+nav a {
+  color: #00ffcc;
+  margin: 0 0.5rem;
   text-decoration: none;
+  font-weight: bold;
 }
-
-a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
-.footer {
+/* Zone Cards */
+.zone-card {
+  background-color: #1c1c1c;
+  border: 1px solid #333;
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 600px;
+  border-radius: 8px;
   text-align: center;
-  font-size: 0.9em;
-  color: #888;
-  margin-top: 60px;
+}
+.zone-card h3 {
+  margin-top: 0;
+  color: #00ffff;
+}
+.zone-card img {
+  max-width: 100px;
+  margin: 1rem 0;
+}
+.zone-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #00ffcc;
+  color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.zone-card a:hover {
+  background-color: #00e6b8;
 }
 
+/* Section Headers */
+section h2 {
+  color: #00ffff;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Lists */
+section ul {
+  max-width: 600px;
+  margin: 1rem auto;
+  padding-left: 1.5rem;
+}
+section li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}
+footer a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .zone-card {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
