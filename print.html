@@ -2,44 +2,150 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>ULTRATEK Print Services</title>
+  <title>ULTRATEK Print Menu</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #111;
+      color: #eee;
+      margin: 0;
+    }
+    nav {
+      background: #222;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .print-menu {
+      background: #f9f9f9;
+      color: #222;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .print-menu h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .print-category {
+      margin-bottom: 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #fff;
+      overflow: hidden;
+    }
+    .print-category summary {
+      padding: 0.8rem 1rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+      background: #eee;
+      cursor: pointer;
+    }
+    .print-category ul {
+      list-style: none;
+      padding: 0.5rem 1.5rem;
+      margin: 0;
+    }
+    .print-category li {
+      padding: 0.3rem 0;
+      border-bottom: 1px solid #eee;
+    }
+    @media (max-width: 600px) {
+      .print-menu {
+        padding: 1rem;
+      }
+      .print-menu h2 {
+        font-size: 1.5rem;
+      }
+      .print-category summary {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
-<nav class="navbar">
-  <ul>
-    <li><a href="index.html">🏠 Home</a></li>
-    <li><a href="console.html">🎮 Console</a></li>
-    <li><a href="pc-lan.html">💻 PC LAN</a></li>
-    <li><a href="vr.html">🕶️ VR</a></li>
-    <li><a href="table-tennis.html">🏓 Table Tennis</a></li>
-    <li><a href="pool.html">🎱 Pool</a></li>
-    <li><a href="board-games.html">🧩 Board Games</a></li>
-    <li><a href="big-screen.html">📺 Big Screen</a></li>
-    <li><a href="print.html">🖨️ Print</a></li>
-    <li><a href="reservations.html">🎟️ Reserve</a></li>
-  </ul>
-</nav>
-  <body>
+<body>
 
-  <div class="hero">
-    <h1>🖨️ Print Services</h1>
-    <p>Quick prints. Symbolic overlays. QR logic. ULTRATEK’s print zone supports your campus documents and creative triggers.</p>
-  </div>
+  <!-- 🔗 Navbar -->
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="reservations.html">🎟️ Reserve</a>
+    <a href="print.html">🖨️ Print Menu</a>
+  </nav>
 
-  <section class="zone-card">
-    <h2>📄 Supported Formats</h2>
-    <ul>
-      <li>PDF, DOCX, PPTX</li>
-      <li>JPG, PNG, SVG</li>
-      <li>QR overlays and symbolic glyphs</li>
-    </ul>
+  <!-- 🎮 Hero -->
+  <header>
+    <h1>ULTRATEK Print Station</h1>
+    <p>Explore all available printing services. Tap any category to view details.</p>
+  </header>
+
+  <!-- 🖨️ Modular Print Menu -->
+  <section class="print-menu">
+    <h2>🖨️ ULTRATEK Print Menu</h2>
+
+    <details class="print-category" open>
+      <summary>📄 Document & Photo Printing</summary>
+      <ul>
+        <li>Sizes: A4, A3, A5</li>
+        <li>Paper: Matte, Glossy, Card, Sticker</li>
+        <li>Photos: Passport, ID, Large Format</li>
+        <li>Posters: Full-color A4/A3</li>
+        <li>Plastic Pages: Laminated, full color</li>
+      </ul>
+    </details>
+
+    <details class="print-category">
+      <summary>📢 Flyers, Brochures & Cards</summary>
+      <ul>
+        <li>Flyers & Handbills: Standard & custom</li>
+        <li>Brochures: Flat, folded, multi-panel</li>
+        <li>Business Cards: Full color, custom sizes</li>
+      </ul>
+    </details>
+
+    <details class="print-category">
+      <summary>🧾 Copying & Finishing</summary>
+      <ul>
+        <li>Copying: B/W and full color</li>
+        <li>Lamination: Matte or glossy</li>
+        <li>Binding: Spiral, comb, thermal</li>
+        <li>ID Cards & Badges: Custom print</li>
+      </ul>
+    </details>
+
+    <details class="print-category">
+      <summary>💻 Electronic Document Services</summary>
+      <ul>
+        <li>Photocopying & scanning</li>
+        <li>Document editing & formatting</li>
+        <li>Resume preparation</li>
+        <li>PDF ↔ Word conversion</li>
+        <li>File merging & cleanup</li>
+        <li>CD/DVD burning & archiving</li>
+      </ul>
+    </details>
+
+    <details class="print-category">
+      <summary>🎨 Graphic Design Packages</summary>
+      <ul>
+        <li>In-house design team</li>
+        <li>Up to 5 concepts</li>
+        <li>Up to 10 revisions</li>
+        <li>File types: .AI, .PDF, .JPEG</li>
+        <li>Logo design & brand assets</li>
+      </ul>
+    </details>
   </section>
 
-  <section class="zone-card">
-    <h2>🧠 Symbolic Overlay</h2>
-    <p>Trigger symbolic logic with your print. Scan glyphs to activate zone access, mural logic, or reservation flow.</p>
-    <img src="assets/glyphs/print.svg" alt="Print Glyph" />
-    <a href="murals/overlays/print-glyph-guide.svg">Glyph Guide</a>
-  </section>
-
-  <section class="zone-card">
+</body>
+</html>
