@@ -1,600 +1,143 @@
 /* ===========================
-   ULTRATEK Global Styles
+   Base Styles
    =========================== */
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #111;
-  color: #eee;
-}
-
-/* ===========================
-   Navigation Bar
-   =========================== */
-.navbar {
-  background-color: #222;
-  padding: 1rem;
-  text-align: center;
-}
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.navbar li {
-  display: inline-block;
-  margin: 0 0.5rem;
-}
-.navbar a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 0.95rem;
-}
-
-/* ===========================
-   Hero Section
-   =========================== */
-.hero {
-  text-align: center;
-  padding: 2rem 1rem;
-}
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-.hero p {
-  font-size: 1.1rem;
-  color: #ccc;
-}
-
-/* ===========================
-   Zone Grid
-   =========================== */
-.zone-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-}
-.zone-card {
-  background-color: #1a1a1a;
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 1rem;
-  text-align: center;
-  transition: transform 0.2s ease;
-}
-.zone-card:hover {
-  transform: scale(1.02);
-}
-.zone-card h2 {
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
-  color: #0a74da;
-}
-.zone-card p {
-  font-size: 0.95rem;
-  color: #ccc;
-}
-
-/* ===========================
-   Reserve Section
-   =========================== */
-.reserve-section {
-  text-align: center;
-  padding: 2rem;
-}
-.reserve-button {
-  background-color: #0a74da;
-  color: #fff;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-.reserve-button:hover {
-  background-color: #095bb5;
-}
-
-/* ===========================
-   Footer
-   =========================== */
-footer {
-  background-color: #222;
-  color: #aaa;
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
-}
-footer a {
-  color: #0a74da;
-  text-decoration: none;
-}
-
-/* ===========================
-   Print Menu & Embedded Blocks
-   =========================== */
-.print-menu,
-.pc-specs,
-.pc-experience,
-.membership-perks,
-.hardware-showcase,
-.immersive-experience {
-  background-color: #f4f4f4;
-  color: #222;
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 900px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-.print-menu h2,
-.pc-specs h2,
-.pc-experience h2,
-.membership-perks h2,
-.hardware-showcase h2,
-.immersive-experience h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  color: #0a74da;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 0.5rem;
-}
-.print-category summary {
-  font-weight: bold;
-  font-size: 1.1rem;
-  background-color: #eee;
-  padding: 0.8rem 1rem;
-  cursor: pointer;
-}
-.print-category ul,
-.pc-specs ul,
-.membership-perks ul,
-.hardware-showcase ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-.print-category li,
-.pc-specs li,
-.membership-perks li,
-.hardware-showcase li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #ddd;
-  font-size: 1rem;
-}
-.pc-experience p,
-.immersive-experience p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 0.5rem 0;
-}
-
-/* ===========================
-   Responsive Adjustments
-   =========================== */
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .hero p {
-    font-size: 1rem;
-  }
-  .zone-card h2 {
-    font-size: 1.1rem;
-  }
-  .zone-card p {
-    font-size: 0.9rem;
-  }
-  .reserve-button {
-    font-size: 0.95rem;
-    padding: 0.6rem 1.2rem;
-  }
-  .print-menu h2,
-  .pc-specs h2,
-  .pc-experience h2 {
-    font-size: 1.3rem;
-  }
-  .print-category summary {
-    font-size: 1rem;
-  }
-  .print-category li,
-  .pc-specs li,
-  .pc-experience p {
-    font-size: 0.95rem;
-  }
-}
-.filter-controls {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.filter-controls button {
-  background: #0a74da;
-  color: #fff;
-  border: none;
-  margin: 0.3rem;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-}
-.filter-controls button:hover {
-  background: #095bb5;
-}
-.game-group {
-  display: block;
-  margin-bottom: 2rem;
-}
-/* ===========================
-   ULTRATEK Loyalty Rewards
-   =========================== */
-
-.rewards-hero {
-  text-align: center;
-  padding: 2rem 1rem;
-}
-.rewards-hero h1 {
-  font-size: 2.2rem;
-  color: #0a74da;
-}
-.rewards-hero p {
-  font-size: 1.1rem;
-  color: #ccc;
-}
-
-.rewards-poster {
-  text-align: center;
-  margin: 2rem auto;
-}
-.rewards-poster img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.rewards-list {
-  background: #f4f4f4;
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 900px;
-  border-radius: 8px;
-}
-.rewards-list h2 {
-  color: #0a74da;
-  margin-bottom: 1rem;
-}
-.rewards-list ul {
-  list-style: none;
-  padding-left: 0;
-}
-.rewards-list li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #ddd;
-  font-size: 1rem;
-}
-.rewards-list span {
-  color: red;
-  font-weight: bold;
-}
-
-/* ===========================
-   Footer Consistency
-   =========================== */
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
-  color: #aaa;
-}
-footer a {
-  color: #0a74da;
-  text-decoration: none;
-}
-/* ===========================
-   Mobile Header & Side Menu
-   =========================== */
-
-.mobile-header {
-  position: sticky;
-  top: 0;
-  background: #0a74da;
-  color: #fff;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1000;
-}
-.mobile-header h1 {
-  font-size: 1.5rem;
-  margin: 0;
-}
-#menu-toggle {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: #fff;
-  cursor: pointer;
-}
-
-.side-menu {
-  position: fixed;
-  top: 0;
-  left: -250px;
-  width: 220px;
-  height: 100%;
-  background: #222;
-  color: #fff;
-  padding-top: 4rem;
-  transition: left 0.3s ease;
-  z-index: 999;
-}
-.side-menu ul {
-  list-style: none;
-  padding: 0;
-}
-.side-menu li {
-  padding: 1rem;
-  border-bottom: 1px solid #444;
-}
-.side-menu a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  display: block;
-}
-.side-menu a.active {
-  background-color: #0a74da;
-  color: #fff;
-  border-radius: 4px;
-}
-.side-menu.open {
-  left: 0;
-}
-
-/* ===========================
-   Hero Section
-   =========================== */
-
-.hero {
-  text-align: center;
-  padding: 3rem 1rem;
-  background: #0a74da;
-  color: #fff;
-}
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-.hero p {
-  font-size: 1.2rem;
-}
-
-/* ===========================
-   Zone Grid
-   =========================== */
-
-.zone-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
-  padding: 2rem;
-  max-width: 1000px;
-  margin: auto;
-}
-.zone-grid a {
-  display: block;
-  background: #f4f4f4;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #222;
-  font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-.zone-grid a:hover {
-  background: #e0e0e0;
-}
-
-/* ===========================
-   Featured Zone
-   =========================== */
-
-#zone-highlight {
-  text-align: center;
-  padding: 2rem;
-  background: #f9f9f9;
-}
-#zone-highlight h2 {
-  color: #0a74da;
-}
-#zone-highlight h3 {
-  font-size: 1.4rem;
-  margin-top: 1rem;
-}
-#zone-highlight p {
-  font-size: 1rem;
-  color: #444;
-}
-
-/* ===========================
-   Footer
-   =========================== */
-
-.footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
-  color: #aaa;
-}
-.footer a {
-  color: #0a74da;
-  text-decoration: none;
-}
-/* ===========================
-   Sticky Header & Side Menu
-   =========================== */
-
-.mobile-header {
-  position: sticky;
-  top: 0;
-  background: #0a74da;
-  color: #fff;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1000;
-}
-.mobile-header h1 {
-  font-size: 1.5rem;
-  margin: 0;
-}
-#menu-toggle {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: #fff;
-  cursor: pointer;
-}
-
-.side-menu {
-  position: fixed;
-  top: 0;
-  left: -250px;
-  width: 220px;
-  height: 100%;
-  background: #222;
-  color: #fff;
-  padding-top: 4rem;
-  transition: left 0.3s ease;
-  z-index: 999;
-}
-.side-menu ul {
-  list-style: none;
-  padding: 0;
-}
-.side-menu li {
-  padding: 1rem;
-  border-bottom: 1px solid #444;
-}
-.side-menu a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  display: block;
-}
-.side-menu a.active {
-  background-color: #0a74da;
-  color: #fff;
-  border-radius: 4px;
-}
-.side-menu.open {
-  left: 0;
-}
-
-/* ===========================
-   Hero Section
-   =========================== */
-
-.hero {
-  text-align: center;
-  padding: 3rem 1rem;
-  background: #0a74da;
-  color: #fff;
-}
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-.hero p {
-  font-size: 1.2rem;
-}
-
-/* ===========================
-   Zone Grid
-   =========================== */
-
-.zone-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
-  padding: 2rem;
-  max-width: 1000px;
-  margin: auto;
-}
-.zone-grid a {
-  display: block;
-  background: #f4f4f4;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #222;
-  font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-.zone-grid a:hover {
-  background: #e0e0e0;
-}
-
-/* ===========================
-   Zone-Specific Pricing
-   =========================== */
-
-.zone-pricing {
   background: #fff;
-  padding: 2rem;
-  max-width: 1000px;
-  margin: auto;
-  border-radius: 8px;
+  color: #222;
 }
-.zone-pricing h2 {
-  color: #0a74da;
-  margin-bottom: 1rem;
-  text-align: center;
+h1, h2, h3 {
+  margin: 0;
 }
-.zone-pricing details {
-  margin-bottom: 1rem;
-  background: #f4f4f4;
-  padding: 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-}
-.zone-pricing summary {
-  font-weight: bold;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-.zone-pricing ul {
+ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
-  padding-left: 1rem;
 }
-.zone-pricing li {
-  padding: 0.3rem 0;
-}
-.zone-pricing a {
-  display: inline-block;
-  margin-top: 1rem;
-  color: #0a74da;
-  font-weight: bold;
+a {
   text-decoration: none;
+  color: #0a74da;
 }
 
 /* ===========================
-   Dynamic Pricing Toggle
+   Sticky Header
    =========================== */
 
-.pricing-toggle {
+.mobile-header {
+  position: sticky;
+  top: 0;
+  background: #0a74da;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.mobile-header h1 {
+  font-size: 1.5rem;
+}
+#menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ===========================
+   Side Menu
+   =========================== */
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 220px;
+  height: 100%;
+  background: #222;
+  color: #fff;
+  padding-top: 4rem;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+.side-menu.open {
+  left: 0;
+}
+.side-menu ul {
+  padding: 0;
+}
+.side-menu li {
+  padding: 1rem;
+  border-bottom: 1px solid #444;
+}
+.side-menu a {
+  color: #fff;
+  font-weight: bold;
+  display: block;
+}
+.side-menu a.active {
+  background: #0a74da;
+  border-radius: 4px;
+}
+
+/* ===========================
+   Hero Section
+   =========================== */
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #0a74da;
+  color: #fff;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* ===========================
+   Zone Grid
+   =========================== */
+
+.zone-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
   padding: 2rem;
   max-width: 1000px;
   margin: auto;
+}
+.zone-grid a {
+  background: #f4f4f4;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #222;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.zone-grid a:hover {
+  background: #e0e0e0;
+}
+
+/* ===========================
+   Zone Pricing Toggles
+   =========================== */
+
+.zone-toggle {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+.zone-toggle h2 {
+  color: #0a74da;
+  margin-bottom: 1rem;
   text-align: center;
 }
 .toggle-buttons {
@@ -622,7 +165,6 @@ footer a {
   text-align: left;
 }
 .pricing-content ul {
-  list-style: none;
   padding-left: 1rem;
 }
 .pricing-content li {
@@ -630,7 +172,7 @@ footer a {
 }
 
 /* ===========================
-   Student Bundle Selector
+   Student Bundles
    =========================== */
 
 .student-bundles {
@@ -668,7 +210,6 @@ footer a {
   text-align: left;
 }
 .bundle-content ul {
-  list-style: none;
   padding-left: 1rem;
 }
 .bundle-content li {
@@ -691,5 +232,4 @@ footer a {
 }
 .footer a {
   color: #0a74da;
-  text-decoration: none;
 }
