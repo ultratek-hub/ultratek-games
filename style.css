@@ -159,6 +159,35 @@ footer a:hover {
   border-radius: 4px;
   transition: background 0.3s;
 }
+.filters {
+  text-align: center;
+  margin: 1rem 0;
+}
+.filters button {
+  margin: 0.3rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.filters button:hover {
+  background: #444;
+}
+.game-section {
+  margin: 2rem;
+}
+.game-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+.game-section li {
+  margin: 0.5rem 0;
+}
+.hidden {
+  display: none;
+}
 
 .navbar li a:hover {
   background-color: #00ffcc;
