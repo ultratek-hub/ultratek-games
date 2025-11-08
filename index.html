@@ -4,127 +4,6 @@
   <meta charset="UTF-8" />
   <title>ULTRATEK Hub</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* 🔝 Mobile Header */
-    .mobile-header {
-      position: sticky;
-      top: 0;
-      background: #0a74da;
-      color: #fff;
-      padding: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      z-index: 1000;
-    }
-    .mobile-header h1 {
-      font-size: 1.5rem;
-      margin: 0;
-    }
-    #menu-toggle {
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      color: #fff;
-      cursor: pointer;
-    }
-
-    /* 📱 Side Menu */
-    .side-menu {
-      position: fixed;
-      top: 0;
-      left: -250px;
-      width: 220px;
-      height: 100%;
-      background: #222;
-      color: #fff;
-      padding-top: 4rem;
-      transition: left 0.3s ease;
-      z-index: 999;
-    }
-    .side-menu ul {
-      list-style: none;
-      padding: 0;
-    }
-    .side-menu li {
-      padding: 1rem;
-      border-bottom: 1px solid #444;
-    }
-    .side-menu a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .side-menu a.active {
-      background-color: #0a74da;
-      color: #fff;
-      border-radius: 4px;
-    }
-    .side-menu.open {
-      left: 0;
-    }
-
-    /* 🏠 Hero Section */
-    .hero {
-      text-align: center;
-      padding: 3rem 1rem;
-      background: #0a74da;
-      color: #fff;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-    }
-
-    /* 🧭 Zone Grid */
-    .zone-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1rem;
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .zone-grid a {
-      display: block;
-      background: #f4f4f4;
-      padding: 1rem;
-      text-align: center;
-      border-radius: 8px;
-      text-decoration: none;
-      color: #222;
-      font-weight: bold;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .zone-grid a:hover {
-      background: #e0e0e0;
-    }
-
-    /* 🔥 Featured Zone */
-    #zone-highlight {
-      text-align: center;
-      padding: 2rem;
-      background: #f9f9f9;
-    }
-    #zone-highlight h2 {
-      color: #0a74da;
-    }
-
-    /* 📡 Footer */
-    .footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-    .footer a {
-      color: #0a74da;
-      text-decoration: none;
-    }
-  </style>
 </head>
 <body>
 
@@ -148,6 +27,7 @@
       <li><a href="print.html">🖨️ Print</a></li>
       <li><a href="reservations.html">🎟️ Reserve</a></li>
       <li><a href="rewards.html">🎁 Rewards</a></li>
+      <li><a href="pricing.html">💸 Pricing</a></li>
     </ul>
   </nav>
 
@@ -155,12 +35,6 @@
   <section class="hero">
     <h1>Welcome to ULTRATEK</h1>
     <p>Modular gaming, immersive zones, and practical services—right outside FUTA Northgate.</p>
-  </section>
-
-  <!-- 🔥 Featured Zone -->
-  <section id="zone-highlight">
-    <h2>🔥 Featured Zone</h2>
-    <div id="zone-content"></div>
   </section>
 
   <!-- 🧭 Zone Navigation -->
@@ -177,6 +51,42 @@
     <a href="rewards.html">🎁 Loyalty Rewards</a>
   </section>
 
+  <!-- 💸 Zone-Specific Pricing -->
+  <section class="zone-pricing">
+    <h2>💸 Zone-Specific Pricing</h2>
+    <details><summary>💻 PC Gaming</summary><ul><li>₦500/hr</li><li>₦1,200 for 3 hrs</li><li>₦4,000 for 12 hrs</li></ul></details>
+    <details><summary>🎮 Console Gaming</summary><ul><li>₦600/hr</li><li>2 players for ₦1,000/hr</li><li>Weekend Tournament: ₦1,500/player</li></ul></details>
+    <details><summary>🕶️ VR Booth</summary><ul><li>₦500 for 20 mins</li><li>Group of 4: ₦1,800</li></ul></details>
+    <details><summary>🎱 Pool Table</summary><ul><li>₦200/game</li><li>Mini Tournament: ₦500 entry</li></ul></details>
+    <details><summary>🖨️ Print & Photocopy</summary><ul><li>₦30/page</li><li>₦250 for 10 pages</li></ul></details>
+    <details><summary>🍔 Snacks & Bundles</summary><ul><li>Standard: ₦200–₦400</li><li>Gamer Pack: ₦900</li><li>Duo Pack: ₦2,000</li></ul></details>
+    <p><a href="pricing.html">View full pricing strategy →</a></p>
+  </section>
+
+  <!-- 💸 Dynamic Pricing Toggle -->
+  <section class="pricing-toggle">
+    <h2>💸 Explore Pricing Options</h2>
+    <div class="toggle-buttons">
+      <button data-toggle="standard">Standard Rates</button>
+      <button data-toggle="bulk">Bulk Packs</button>
+      <button data-toggle="events">Tournaments & Events</button>
+      <button data-toggle="bundles">Snack Bundles</button>
+      <button data-toggle="memberships">Memberships</button>
+    </div>
+    <div id="pricing-content" class="pricing-content"></div>
+  </section>
+
+  <!-- 🎒 Student Bundles -->
+  <section class="student-bundles">
+    <h2>🎒 Student Value Bundles</h2>
+    <div class="bundle-buttons">
+      <button data-bundle="gamer">🎮 Gamer Pack</button>
+      <button data-bundle="duo">👥 Duo Pack</button>
+      <button data-bundle="print">🖨️ Print Pack</button>
+    </div>
+    <div id="bundle-content" class="bundle-content"></div>
+  </section>
+
   <!-- 📡 Footer -->
   <footer class="footer">
     <p>Explore more zones or <a href="reservations.html">book your time</a> now.</p>
@@ -184,66 +94,50 @@
 
   <!-- 🧠 Scripts -->
   <script>
-    // 🔘 Toggle Side Menu
+    // 🔘 Side Menu Toggle
     const toggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('side-menu');
     toggle.addEventListener('click', () => {
       menu.classList.toggle('open');
     });
 
-    // 👉 Swipe Gesture Logic
+    // 👉 Swipe Gestures
     let touchStartX = 0;
     let touchEndX = 0;
-    document.addEventListener('touchstart', (e) => {
+    document.addEventListener('touchstart', e => {
       touchStartX = e.changedTouches[0].screenX;
     });
-    document.addEventListener('touchend', (e) => {
+    document.addEventListener('touchend', e => {
       touchEndX = e.changedTouches[0].screenX;
-      handleSwipe();
+      if (touchEndX - touchStartX > 80) menu.classList.add('open');
+      if (touchEndX - touchStartX < -80) menu.classList.remove('open');
     });
-    function handleSwipe() {
-      const swipeDistance = touchEndX - touchStartX;
-      if (swipeDistance > 80) {
-        menu.classList.add('open');
-      } else if (swipeDistance < -80) {
-        menu.classList.remove('open');
-      }
-    }
 
     // ✨ Active Zone Highlight
     const currentPage = window.location.pathname.split("/").pop();
-    const menuLinks = document.querySelectorAll("#side-menu a");
-    menuLinks.forEach(link => {
-      if (link.getAttribute("href") === currentPage) {
-        link.classList.add("active");
-      }
+    document.querySelectorAll("#side-menu a").forEach(link => {
+      if (link.getAttribute("href") === currentPage) link.classList.add("active");
     });
 
-    // 🔥 Dynamic Featured Zone
-    const zones = [
-      {
-        name: "PC LAN",
-        description: "Scrim-ready setups, Black Ops II, MW2, and FIFA23.",
-        icon: "💻"
-      },
-      {
-        name: "Console",
-        description: "Couch battles with Mortal Kombat, FIFA, and Spider-Man.",
-        icon: "🎮"
-      },
-      {
-        name: "VR",
-        description: "Immersive headset experiences—first-person shooters and rhythm games.",
-        icon: "🕶️"
-      }
-    ];
-    const featured = zones[Math.floor(Math.random() * zones.length)];
-    const zoneDiv = document.getElementById("zone-content");
-    zoneDiv.innerHTML = `
-      <h3>${featured.icon} ${featured.name}</h3>
-      <p>${featured.description}</p>
-    `;
-  </script>
+    // 💸 Dynamic Pricing Toggle
+    const pricingData = {
+      standard: `<ul><li>PC: ₦500/hr</li><li>Console: ₦600/hr</li><li>VR: ₦500/20 mins</li><li>Pool: ₦200/game</li><li>Print: ₦30/page</li></ul>`,
+      bulk: `<ul><li>PC: ₦1,200 for 3 hrs | ₦4,000 for 12 hrs</li><li>Print: ₦250 for 10 pages</li></ul>`,
+      events: `<ul><li>FIFA Tournament: ₦1,500/player</li><li>Pool Tourney: ₦500 entry</li><li>Scrabble/Chess League: ₦1,000 entry</li><li>LAN Party: CoD/Fortnite</li></ul>`,
+      bundles: `<ul><li>Gamer Pack: ₦900</li><li>Duo Pack: ₦2,000</li></ul>`,
+      memberships: `<ul><li>Silver: ₦5,000/month</li><li>Gold: ₦10,000/month</li><li>VIP Neon Pass: ₦20,000/month</li></ul>`
+    };
+    const pricingButtons = document.querySelectorAll(".toggle-buttons button");
+    const pricingContent = document.getElementById("pricing-content");
+    pricingButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const key = btn.getAttribute("data-toggle");
+        pricingContent.innerHTML = pricingData[key];
+      });
+    });
+    pricingContent.innerHTML = pricingData.standard;
 
-</body>
-</html>
+    // 🎒 Student Bundle Selector
+    const bundleData = {
+      gamer: `<ul><li>1 drink</li><li>1 noodles</li><li>1 hr PC</li><li class="savings">₦900 (save ₦100)</li></ul>`,
+      duo: `<ul><li>2 drinks</li><li>2 snacks</li><li>2 hrs console</li><li class="savings">₦
