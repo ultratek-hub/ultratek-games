@@ -1,60 +1,130 @@
-# 🎮 ULTRATEK-GAMES
+🎮 ULTRATEK GAMES HUB
+Play • Compete • Connect
 
-**Gaming. Tech. Print. Symbolic Infrastructure.**  
-ULTRATEK-GAMES is the public-facing site for ULTRATEK—a modular gaming and tech hub near FUTA Northgate. This repo powers the GitHub Pages site that showcases our gaming zones, print services, symbolic overlays, and event logic.
+Welcome to ULTRATEK Games Hub — a modern gaming, recreation, and hangout space built for students and young creatives.
 
----
+Whether you’re here to compete, relax, or connect with friends, ULTRATEK is designed for good games, good vibes, and great community.
 
-## 🔗 Live Site
+🚀 QUICK ACTIONS
 
-Visit: [https://ultratek-hub.github.io/ultratek-games](https://ultratek-hub.github.io/ultratek-games)
+👉 Reserve a Gaming Station
 
----
+👉 Register for Tournaments & Events
 
-## 🧱 Repo Structure
+👉 Become a Brand Ambassador
 
-- `index.html` — Homepage with gaming zones and symbolic overlays
-- `style.css` — Unified styling
-- `assets/` — Glyphs, QR codes, zone icons
-- `events/` — Tournament logic and sign-up forms
-- `murals/` — Symbolic overlays and glyph guides (linked externally)
-- `ambassadors/` — Role logic and onboarding (linked externally)
+🎮 WHAT YOU CAN DO HERE
+Console Gaming
 
----
+Multiple console stations
 
-## 🕹️ Core Zones
+Competitive & casual play
 
-- Console Zone (PS5, FIFA, Mortal Kombat, NBA 2K)  
-- PC LAN (Steam titles, scrims, solo grind)  
-- Table Tennis & Pool  
-- Board Games (Chess, Scrabble, Uno, Ludo)  
-- Big Screen TV (Premier League, esports, anime)
+Comfortable viewing setup
 
----
+Board & Table Games
 
-## 🖨️ Print Services
+Chess
 
-- A4/A3 quick prints  
-- Large format posters (up to 24″ wide)  
-- QR overlays and symbolic layout support
+Scrabble
 
----
+Pool table
 
-## 🧠 Symbolic System
+Group-friendly games
 
-ULTRATEK uses glyphs and overlays to encode meaning, guide movement, and trigger digital access.  
-Linked resources:
-- [`murals`](https://github.com/ultratek-hub/murals) — Symbol dictionary, elevation overlays  
-- [`ambassadors`](https://github.com/ultratek-hub/ambassadors) — Role logic and sign-up  
-- [`events`](https://github.com/ultratek-hub/events) — Tournament schedules and RSVP forms  
-- [`docs`](https://github.com/ultratek-hub/docs) — Remix guides and painter onboarding
+Tech & Print Services
 
----
+Printing & photocopying
 
-## 🏗️ Contributor Logic
+Scanning
 
-This repo is modular. Each zone or service has its own HTML logic and symbolic overlays.  
-To contribute:
-1. Fork the repo
-2. Add or update zone logic
-3. Submit a pull request with clear commit messages
+Laminating & binding
+
+Quick student services
+
+🏆 TOURNAMENTS & EVENTS
+
+ULTRATEK hosts:
+
+Console gaming tournaments
+
+Board game competitions
+
+Friendly campus game nights
+
+📌 Upcoming events:
+👉 Event registration links coming soon
+
+📅 RESERVATIONS
+
+You can reserve:
+
+A console station
+
+Group gaming sessions
+
+Tournament slots
+
+📌 How reservations work:
+👉 Online form (coming soon)
+👉 Walk-in bookings available
+
+🌟 BRAND AMBASSADOR PROGRAM
+
+Are you:
+
+Active on campus?
+
+Passionate about gaming?
+
+Influential among friends?
+
+Join the ULTRATEK Brand Ambassador Team.
+
+Perks include:
+
+Free or discounted play
+
+Early access to events
+
+Recognition & exclusive benefits
+
+📌 Apply here:
+👉 Application link coming soon
+
+🏠 THE ULTRATEK EXPERIENCE
+
+Clean, modern interior
+
+Student-friendly pricing
+
+Safe & supervised space
+
+Designed for comfort and focus
+
+ULTRATEK is not just a gaming house — it’s a community space.
+
+📍 LOCATION
+
+📍 Aluta market, Akure
+
+
+⏰ OPENING HOURS
+
+Daily
+🕗 8:00 AM – 12:00 Midnight
+
+📲 CONNECT WITH US
+
+📸 Instagram: @ultratek_futa
+📧 Email: ultratekgames@gmail.com
+
+🔜 COMING SOON
+
+Online reservations
+
+Membership options
+
+Leaderboards
+
+Special themed tournament nights
