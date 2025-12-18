@@ -1,178 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>ULTRATEK Pricing</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .pricing-section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-    }
-    .pricing-section h2 {
-      color: #0a74da;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-    .pricing-block {
-      background: #f9f9f9;
-      padding: 1rem 1.5rem;
-      margin-bottom: 2rem;
-      border-left: 4px solid #0a74da;
-      border-radius: 6px;
-    }
-    .pricing-block h3 {
-      margin-top: 0;
-      font-size: 1.3rem;
-    }
-    .pricing-block ul {
-      padding-left: 1rem;
-      list-style: none;
-    }
-    .pricing-block li {
-      margin-bottom: 0.5rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-    footer a {
-      color: #0a74da;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
+💰 PRICING & PACKAGES
+ULTRATEK GAMES HUB – Akure
 
-  <!-- 🔝 Header -->
-  <header class="mobile-header">
-    <button id="menu-toggle">☰</button>
-    <h1>ULTRATEK</h1>
-  </header>
+Affordable, flexible pricing designed for students, gamers, and groups.
 
-  <!-- 📱 Side Menu -->
-  <nav id="side-menu" class="side-menu">
-    <ul>
-      <li><a href="index.html">🏠 Home</a></li>
-      <li><a href="console.html">🎮 Console</a></li>
-      <li><a href="pc-lan.html">💻 PC LAN</a></li>
-      <li><a href="vr.html">🕶️ VR</a></li>
-      <li><a href="table-tennis.html">🏓 Table Tennis</a></li>
-      <li><a href="pool.html">🎱 Pool</a></li>
-      <li><a href="board-games.html">🧩 Board Games</a></li>
-      <li><a href="big-screen.html">📺 Big Screen</a></li>
-      <li><a href="print.html">🖨️ Print</a></li>
-      <li><a href="reservations.html">🎟️ Reserve</a></li>
-      <li><a href="rewards.html">🎁 Rewards</a></li>
-    </ul>
-  </nav>
+🖥️ PC GAMING (Zone 3)
 
-  <!-- 💸 Pricing Overview -->
-  <section class="pricing-section">
-    <h2>💸 ULTRATEK Services & Rates</h2>
+Standard Rate
 
-    <div class="pricing-block">
-      <h3>🎮 PC Gaming</h3>
-      <ul>
-        <li>₦500/hr</li>
-        <li>₦1,200 for 3 hrs</li>
-        <li>₦4,000 for 12 hrs (valid 1 week)</li>
-      </ul>
-    </div>
+₦500 per hour
 
-    <div class="pricing-block">
-      <h3>🎮 Console Gaming</h3>
-      <ul>
-        <li>₦600/hr</li>
-        <li>2 players: ₦1,000/hr</li>
-        <li>Weekend Tournament Entry: ₦1,500/player</li>
-      </ul>
-    </div>
+Bulk Packs
 
-    <div class="pricing-block">
-      <h3>🕶️ VR Gaming</h3>
-      <ul>
-        <li>₦500 for 20 mins</li>
-        <li>Group of 4: ₦1,800</li>
-      </ul>
-    </div>
+₦1,200 for 3 hours (₦400/hr)
 
-    <div class="pricing-block">
-      <h3>🎱 Pool Table</h3>
-      <ul>
-        <li>₦200/game</li>
-        <li>Mini Tournament Entry: ₦500</li>
-      </ul>
-    </div>
+₦4,000 for 12 hours (valid for 7 days)
 
-    <div class="pricing-block">
-      <h3>🍔 Snacks & Drinks</h3>
-      <ul>
-        <li>Standard Items: ₦200–₦400</li>
-        <li>Gamer Pack: ₦900</li>
-        <li>Duo Pack: ₦2,000</li>
-      </ul>
-    </div>
+✅ Best value for students who game frequently.
 
-    <div class="pricing-block">
-      <h3>🖨️ Printing & Photocopy</h3>
-      <ul>
-        <li>₦30/page</li>
-        <li>₦250 for 10 pages</li>
-      </ul>
-    </div>
+🎮 CONSOLE GAMING (PS5 / Xbox – 2 Stations)
 
-    <div class="pricing-block">
-      <h3>🏆 Memberships</h3>
-      <ul>
-        <li>Silver: ₦5,000/month</li>
-        <li>Gold: ₦10,000/month</li>
-        <li>VIP Neon Pass: ₦20,000/month</li>
-      </ul>
-    </div>
+Standard Rate
 
-    <div class="pricing-block">
-      <h3>🎤 Events</h3>
-      <ul>
-        <li>FIFA Night: ₦500 entry</li>
-        <li>Scrabble/Chess League: ₦1,000 entry</li>
-        <li>LAN Party: Free with PC booking</li>
-      </ul>
-    </div>
-  </section>
+₦600 per hour
 
-  <!-- 📡 Footer -->
-  <footer>
-    <p>Back to <a href="index.html">ULTRATEK Home</a> or <a href="reservations.html">Reserve a Slot</a></p>
-  </footer>
+Multiplayer Special
 
-  <!-- 🧠 Scripts -->
-  <script>
-    const toggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('side-menu');
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('open');
-    });
+2 players – ₦1,000 per hour (₦500 each)
 
-    let touchStartX = 0;
-    let touchEndX = 0;
-    document.addEventListener('touchstart', e => {
-      touchStartX = e.changedTouches[0].screenX;
-    });
-    document.addEventListener('touchend', e => {
-      touchEndX = e.changedTouches[0].screenX;
-      if (touchEndX - touchStartX > 80) menu.classList.add('open');
-      if (touchEndX - touchStartX < -80) menu.classList.remove('open');
-    });
+Weekend Tournaments
 
-    const currentPage = window.location.pathname.split("/").pop();
-    document.querySelectorAll("#side-menu a").forEach(link => {
-      if (link.getAttribute("href") === currentPage) link.classList.add("active");
-    });
-  </script>
+₦1,500 per player
 
-</body>
-</html>
+Winner receives free snacks + 2 gaming hours
+
+🔥 Perfect for FIFA, eFootball & Mortal Kombat sessions.
+
+🕶️ VR GAMING (1 Booth)
+
+Standard Rate
+
+₦500 for 20 minutes
+(₦1,500 per hour equivalent)
+
+Group Package
+
+₦1,800 for 4 friends
+(20 minutes each, back-to-back)
+
+🎯 Experience next-gen gaming together.
+
+🎱 POOL TABLE (Zone 2)
+
+Standard Play
+
+₦200 per game (10–15 minutes)
+
+Mini Tournaments
+
+₦500 entry fee
+
+Winner receives snack coupon
+
+♟️ Great for casual play and social hangouts.
+
+🍔 SNACKS & DRINKS
+
+Individual Items
+
+₦200 – ₦400 range
+(drinks, sausage rolls, noodles & egg, mini shawarma)
+
+Combo Deals
+
+Gamer Pack
+
+1 drink + noodles + 1 hr PC → ₦900
+
+Duo Pack
+
+2 drinks + 2 snacks + 2 hrs console → ₦2,000
+
+💡 Bundles help you save more while gaming longer.
+
+🖨️ PRINTING & PHOTOCOPY (Zone 1)
+
+Standard
+
+₦30 per page
+
+Bulk Offer
+
+₦250 for 10 pages (₦25 each)
+
+📄 Fast, reliable printing for students.
+
+🏆 MEMBERSHIPS (Optional – After Launch)
+
+Silver Card – ₦5,000/month
+
+15 hrs PC gaming
+
+1 pool coupon
+
+Gold Card – ₦10,000/month
+
+35 hrs PC gaming
+
+3 hrs console
+
+1 VR session
+
+VIP “Neon Pass” – ₦20,000/month
+
+Unlimited PC gaming
+
+10 hrs console
+
+Discounts on snacks & events
+
+🔁 Perfect for regular gamers who want maximum value.
+
+🎤 EVENTS & COMMUNITY ACTIVITIES
+
+FIFA Night (Fridays)
+
+₦500 entry
+
+Winner gets 2 free gaming hours
+
+Chess / Scrabble League
+
+₦1,000 weekly entry
+
+Prizes: snacks + free PC hours
+
+LAN Parties
+
+Multiplayer CoD, Fortnite & FIFA nights
+
+All PCs connected for team play
+
+🎉 ULTRATEK is more than gaming — it’s a community.
+
+🔗 QUICK LINKS
+
+🎟️ Make a Reservation
+
+🏠 Back to Home
