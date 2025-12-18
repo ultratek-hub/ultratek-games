@@ -1,177 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>ULTRATEK Hub</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+🎮 ULTRATEK GAMES HUB
+Play • Compete • Connect
 
-  <!-- 🔝 Sticky Header -->
-  <header class="mobile-header">
-    <button id="menu-toggle">☰</button>
-    <h1>ULTRATEK</h1>
-  </header>
+Welcome to ULTRATEK Games Hub — a modern gaming, recreation, and social space designed for students and young creatives.
 
-  <!-- 📱 Side Menu -->
-  <nav id="side-menu" class="side-menu">
-    <ul>
-      <li><a href="index.html">🏠 Home</a></li>
-      <li><a href="console.html">🎮 Console</a></li>
-      <li><a href="pc-lan.html">💻 PC LAN</a></li>
-      <li><a href="vr.html">🕶️ VR</a></li>
-      <li><a href="table-tennis.html">🏓 Table Tennis</a></li>
-      <li><a href="pool.html">🎱 Pool</a></li>
-      <li><a href="board-games.html">🧩 Board Games</a></li>
-      <li><a href="big-screen.html">📺 Big Screen</a></li>
-      <li><a href="print.html">🖨️ Print</a></li>
-      <li><a href="reservations.html">🎟️ Reserve</a></li>
-      <li><a href="rewards.html">🎁 Rewards</a></li>
-    </ul>
-  </nav>
+Whether you’re here to compete, relax, or connect with friends, ULTRATEK delivers premium gaming, fair pricing, and good vibes.
 
-  <!-- 🏠 Hero Section -->
-  <section class="hero">
-    <h1>Welcome to ULTRATEK</h1>
-    <p>Modular gaming, immersive zones, and practical services—right outside FUTA Northgate.</p>
-  </section>
+🚀 QUICK ACTIONS
 
-  <!-- 🧭 Zone Grid -->
-  <section class="zone-grid">
-    <a href="console.html">🎮 Console Zone</a>
-    <a href="pc-lan.html">💻 PC LAN</a>
-    <a href="vr.html">🕶️ VR</a>
-    <a href="table-tennis.html">🏓 Table Tennis</a>
-    <a href="pool.html">🎱 Pool Table</a>
-    <a href="board-games.html">🧩 Board Games</a>
-    <a href="big-screen.html">📺 Big Screen</a>
-    <a href="print.html">🖨️ Print Services</a>
-    <a href="reservations.html">🎟️ Reserve a Slot</a>
-    <a href="rewards.html">🎁 Loyalty Rewards</a>
-  </section>
+🎟️ Reserve a Gaming Station
 
-  <!-- 💸 Embedded Zone Pricing Toggles -->
-  <section class="zone-toggle">
-    <h2>💻 PC Gaming Pricing</h2>
-    <div class="toggle-buttons" data-zone="pc">
-      <button data-toggle="standard">Standard</button>
-      <button data-toggle="bulk">Bulk Packs</button>
-      <button data-toggle="membership">Membership</button>
-    </div>
-    <div class="pricing-content" id="pc-pricing"></div>
-  </section>
+🏆 View Tournaments & Events
 
-  <section class="zone-toggle">
-    <h2>🎮 Console Pricing</h2>
-    <div class="toggle-buttons" data-zone="console">
-      <button data-toggle="standard">Standard</button>
-      <button data-toggle="bulk">Tournaments</button>
-      <button data-toggle="membership">Membership</button>
-    </div>
-    <div class="pricing-content" id="console-pricing"></div>
-  </section>
+🌟 Become a Brand Ambassador
 
-  <section class="zone-toggle">
-    <h2>🕶️ VR Pricing</h2>
-    <div class="toggle-buttons" data-zone="vr">
-      <button data-toggle="standard">Standard</button>
-      <button data-toggle="bulk">Group Pack</button>
-      <button data-toggle="membership">Membership</button>
-    </div>
-    <div class="pricing-content" id="vr-pricing"></div>
-  </section>
+🎮 WHAT WE OFFER
+Console Gaming
 
-  <section class="zone-toggle">
-    <h2>🎱 Pool Pricing</h2>
-    <div class="toggle-buttons" data-zone="pool">
-      <button data-toggle="standard">Standard</button>
-      <button data-toggle="bulk">Tournaments</button>
-      <button data-toggle="membership">Membership</button>
-    </div>
-    <div class="pricing-content" id="pool-pricing"></div>
-  </section>
+Dedicated console stations
 
-  <!-- 🎒 Student Bundles -->
-  <section class="student-bundles">
-    <h2>🎒 Student Value Bundles</h2>
-    <div class="bundle-buttons">
-      <button data-bundle="gamer">🎮 Gamer Pack</button>
-      <button data-bundle="duo">👥 Duo Pack</button>
-      <button data-bundle="print">🖨️ Print Pack</button>
-    </div>
-    <div id="bundle-content" class="bundle-content"></div>
-  </section>
+Competitive & casual play
 
-  <!-- 📡 Footer -->
-  <footer class="footer">
-    <p>Explore more zones or <a href="reservations.html">book your time</a> now.</p>
-  </footer>
+Comfortable, well-ventilated setup
 
-  <!-- 🧠 Scripts -->
-  <script>
-    // 🔘 Side Menu Toggle
-    const toggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('side-menu');
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('open');
-    });
+Board & Table Games
 
-    // 👉 Swipe Gestures
-    let touchStartX = 0;
-    let touchEndX = 0;
-    document.addEventListener('touchstart', e => {
-      touchStartX = e.changedTouches[0].screenX;
-    });
-    document.addEventListener('touchend', e => {
-      touchEndX = e.changedTouches[0].screenX;
-      if (touchEndX - touchStartX > 80) menu.classList.add('open');
-      if (touchEndX - touchStartX < -80) menu.classList.remove('open');
-    });
+Chess
 
-    // ✨ Active Zone Highlight
-    const currentPage = window.location.pathname.split("/").pop();
-    document.querySelectorAll("#side-menu a").forEach(link => {
-      if (link.getAttribute("href") === currentPage) link.classList.add("active");
-    });
+Scrabble
 
-    // 💸 Zone Pricing Toggles
-    const zonePricing = {
-      pc: {
-        standard: `<ul><li>₦500/hr</li></ul>`,
-        bulk: `<ul><li>₦1,200 for 3 hrs</li><li>₦4,000 for 12 hrs (valid 1 week)</li></ul>`,
-        membership: `<ul><li>Silver: 15 hrs/month</li><li>Gold: 35 hrs/month</li><li>VIP: Unlimited</li></ul>`
-      },
-      console: {
-        standard: `<ul><li>₦600/hr</li><li>2 players: ₦1,000/hr</li></ul>`,
-        bulk: `<ul><li>Weekend Tournament: ₦1,500/player</li></ul>`,
-        membership: `<ul><li>Gold: 3 hrs/month</li><li>VIP: 10 hrs/month</li></ul>`
-      },
-      vr: {
-        standard: `<ul><li>₦500 for 20 mins</li></ul>`,
-        bulk: `<ul><li>Group of 4: ₦1,800</li></ul>`,
-        membership: `<ul><li>Gold: 1 session/month</li><li>VIP: Discounted sessions</li></ul>`
-      },
-      pool: {
-        standard: `<ul><li>₦200/game</li></ul>`,
-        bulk: `<ul><li>Mini Tournament: ₦500 entry</li></ul>`,
-        membership: `<ul><li>Silver: 1 free game</li></ul>`
-      }
-    };
+Pool table
 
-    document.querySelectorAll(".toggle-buttons").forEach(group => {
-      const zone = group.getAttribute("data-zone");
-      const output = document.getElementById(`${zone}-pricing`);
-      group.querySelectorAll("button").forEach(btn => {
-        btn.addEventListener("click", () => {
-          const key = btn.getAttribute("data-toggle");
-          output.innerHTML = zonePricing[zone][key];
-        });
-      });
-      output.innerHTML = zonePricing[zone].standard;
-    });
+Group-friendly games
 
-    // 🎒 Student Bundle Selector
-    const bundleData = {
-      gamer: `<ul><li>1 drink</li><li>1 noodles</li><li>1 hr PC</li><li class="savings">₦900</li></ul>`,
-      duo: `<ul><li>2 drinks</li><li>2 snacks</li><li>2 hrs console</li><li class="savings">₦2,000</li></ul>`,
-      print: `<ul><li>10 pages printing</li><li class
+Student Tech Services
+
+Printing & photocopying
+
+Scanning
+
+Laminating & binding
+
+📅 RESERVATIONS (LIVE)
+
+Gaming stations are booked through our online reservation system.
+
+👉 Reserve your slot here:
+🔗 https://docs.google.com/forms/d/e/1FAIpQLSfGge1BpbVyg0XlDTpKlra4-35YWn0maGbH8NpaDLuLu1QE5w/viewform
+
+How it works:
+
+Fill the form
+
+Choose your game & time
+
+Show confirmation on arrival
+
+Walk-ins are accepted when slots are available.
+
+🏆 TOURNAMENTS & EVENTS
+
+ULTRATEK hosts:
+
+Console gaming tournaments
+
+Board game competitions
+
+Community game nights
+
+📌 Registration links will be posted here and on our socials.
+
+🌟 BRAND AMBASSADOR PROGRAM
+
+We’re building a team of energetic students to represent ULTRATEK on campus.
+
+Ambassadors enjoy:
+
+Free or discounted gameplay
+
+Early access to events
+
+Recognition & special perks
+
+📌 Application opens soon
+
+🏠 THE ULTRATEK EXPERIENCE
+
+Clean, modern interior
+
+Student-friendly pricing
+
+Safe, supervised environment
+
+Built for comfort and focus
+
+ULTRATEK is more than a gaming house — it’s a community hub.
+
+📍 LOCATION
+
+📍 FUTA Axis, Akure
+(Exact address to be announced)
+
+⏰ OPENING HOURS
+
+Daily
+🕗 8:00 AM – 12:00 Midnight
+
+📲 CONNECT WITH US
+
+📸 Instagram: @ultratek_futa
+📧 Email: ultratekgames@gmail.com
+
+🔜 COMING SOON
+
+Online membership system
+
+Event calendars
+
+Leaderboards
+
+Themed tournament nights
+
+⚙️ TECH NOTE (FOR YOU)
+
+Reservation system: Google Apps Script + Google Forms (LIVE)
+
+Site: GitHub Pages compatible
+
+Zero backend hosting required
