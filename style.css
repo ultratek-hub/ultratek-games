@@ -33,7 +33,7 @@ nav a {
   margin-left: 1.5rem;
   text-decoration: none;
   color: #9bbcff;
-  transition: 0.2s;
+  transition: 0.25s ease;
 }
 
 nav a:hover {
@@ -43,6 +43,7 @@ nav a:hover {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  color: #00eaff;
 }
 
 /* --------------------------------------------------
@@ -52,6 +53,7 @@ nav a:hover {
   text-align: center;
   padding: 5rem 1rem;
   background: linear-gradient(180deg, #0d0f15, #0f1118);
+  animation: fadeIn 0.8s ease;
 }
 
 .hero button {
@@ -63,7 +65,7 @@ nav a:hover {
   color: #000;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.25s ease;
 }
 
 .hero button:hover {
@@ -86,12 +88,14 @@ nav a:hover {
   padding: 1.5rem;
   border-radius: 10px;
   border: 1px solid #1f222b;
-  transition: 0.2s;
+  transition: 0.25s ease;
+  animation: fadeIn 0.6s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
   border-color: #00eaff;
+  box-shadow: 0 0 12px rgba(0, 234, 255, 0.25);
 }
 
 /* --------------------------------------------------
@@ -102,6 +106,8 @@ nav a:hover {
   margin-top: 3rem;
   margin-bottom: 1rem;
   font-size: 2rem;
+  color: #e3f4ff;
+  animation: fadeIn 0.6s ease;
 }
 
 /* --------------------------------------------------
@@ -114,7 +120,8 @@ nav a:hover {
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #1f222b;
-  box-shadow: 0 0 20px rgba(0, 234, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 234, 255, 0.08);
+  animation: fadeIn 0.6s ease;
 }
 
 #calendar {
@@ -129,8 +136,7 @@ nav a:hover {
   background: #1b1e27;
   border-radius: 6px;
   cursor: pointer;
-  transition: 0.2s;
-  animation: holoFade 0.6s ease forwards;
+  transition: 0.25s ease;
 }
 
 .calendar-day:hover {
@@ -149,7 +155,8 @@ nav a:hover {
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #1f222b;
-  box-shadow: 0 0 20px rgba(0, 234, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 234, 255, 0.08);
+  animation: fadeIn 0.6s ease;
 }
 
 #timeslots {
@@ -165,8 +172,7 @@ nav a:hover {
   cursor: pointer;
   text-align: center;
   font-weight: bold;
-  transition: 0.2s;
-  animation: holoFade 0.6s ease forwards;
+  transition: 0.25s ease;
 }
 
 /* Availability Colors */
@@ -174,14 +180,12 @@ nav a:hover {
   background: #1b1e27;
   border: 1px solid #00eaff;
   color: #00eaff;
-  animation: circuitPulse 1.8s infinite ease-in-out;
 }
 
 .timeslot.almost {
   background: #332400;
   border: 1px solid #ffcc00;
   color: #ffcc00;
-  animation: flicker 1.5s infinite ease-in-out;
 }
 
 .timeslot.booked {
@@ -190,14 +194,13 @@ nav a:hover {
   color: #ff4444;
   cursor: not-allowed;
   opacity: 0.6;
-  animation: hazardPulse 1.5s infinite ease-in-out;
 }
 
 /* Hover Effects */
 .timeslot.available:hover {
   background: #00eaff;
   color: #000;
-  transform: translateY(-4px) scale(1.03);
+  transform: translateY(-4px);
 }
 
 /* --------------------------------------------------
@@ -214,105 +217,27 @@ nav a:hover {
   font-weight: bold;
   font-size: 1rem;
   text-decoration: none;
-  animation: reactorCore 3s infinite ease-in-out;
+  animation: softGlow 3s infinite ease-in-out;
   z-index: 9999;
+  transition: 0.25s ease;
+}
+
+.floating-reserve-btn:hover {
+  transform: translateY(-4px);
 }
 
 /* --------------------------------------------------
-   CYBERPUNK EFFECTS
+   ANIMATIONS
 -------------------------------------------------- */
-
-/* Hologram Fade */
-@keyframes holoFade {
-  0% { opacity: 0; transform: translateY(20px) scale(0.95); filter: blur(4px); }
-  60% { opacity: 0.7; transform: translateY(5px) scale(1.02); filter: blur(1px); }
-  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* Circuit Pulse */
-@keyframes circuitPulse {
-  0% { box-shadow: 0 0 4px #00eaff; }
-  50% { box-shadow: 0 0 18px #00eaff; }
-  100% { box-shadow: 0 0 4px #00eaff; }
-}
-
-/* Flicker */
-@keyframes flicker {
-  0%, 100% { opacity: 1; }
-  40% { opacity: 0.6; }
-  60% { opacity: 0.8; }
-}
-
-/* Hazard Pulse */
-@keyframes hazardPulse {
-  0% { box-shadow: 0 0 4px #ff0033; }
-  50% { box-shadow: 0 0 18px #ff0033; }
-  100% { box-shadow: 0 0 4px #ff0033; }
-}
-
-/* Reactor Core Glow */
-@keyframes reactorCore {
-  0% { box-shadow: 0 0 10px #00eaff, inset 0 0 10px #00eaff; }
-  50% { box-shadow: 0 0 25px #00eaff, inset 0 0 25px #00eaff; }
-  100% { box-shadow: 0 0 10px #00eaff, inset 0 0 10px #00eaff; }
-}
-
-/* Cyber Text RGB Split */
-.cyber-text {
-  text-shadow:
-    0 0 5px #00eaff,
-    2px 0 3px rgba(255,0,0,0.4),
-    -2px 0 3px rgba(0,255,0,0.4);
-}
-
-/* Scanline Sweep */
-@keyframes scanSweep {
-  0% { background-position: -200px 0; }
-  100% { background-position: 200px 0; }
-}
-
-.cyber-scan {
-  background: linear-gradient(90deg, transparent, rgba(0,255,255,0.4), transparent);
-  background-size: 200px 100%;
-  animation: scanSweep 2s linear infinite;
-}
-
-/* Ripple Effect */
-.cyber-ripple {
-  position: relative;
-  overflow: hidden;
-}
-
-.cyber-ripple:hover::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 5px;
-  height: 5px;
-  background: rgba(0,255,255,0.4);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  animation: ripple 0.6s ease-out;
-}
-
-@keyframes ripple {
-  from { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-  to { opacity: 0; transform: translate(-50%, -50%) scale(20); }
-}
-
-/* Glitch Effect */
-@keyframes glitch {
-  0% { opacity: 1; transform: translate(0); }
-  20% { opacity: 0.8; transform: translate(-1px, 1px); }
-  40% { opacity: 1; transform: translate(1px, -1px); }
-  60% { opacity: 0.9; transform: translate(-1px, -1px); }
-  80% { opacity: 1; transform: translate(1px, 1px); }
-  100% { opacity: 1; transform: translate(0); }
-}
-
-.glitchy {
-  animation: glitch 0.4s steps(2, end) infinite;
+@keyframes softGlow {
+  0% { box-shadow: 0 0 10px rgba(0, 234, 255, 0.3); }
+  50% { box-shadow: 0 0 22px rgba(0, 234, 255, 0.6); }
+  100% { box-shadow: 0 0 10px rgba(0, 234, 255, 0.3); }
 }
 
 /* --------------------------------------------------
