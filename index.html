@@ -1,143 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ULTRATEK Gaming Hub</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ULTRATEK Gaming Hub</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
 <!-- NAVBAR -->
 <nav>
-    <div class="logo">ULTRATEK</div>
-    <div>
-        <a href="#home">Home</a>
-        <a href="#video-games">Video Games</a>
-        <a href="#experiences">Experiences</a>
-        <a href="#membership">Membership</a>
-        <a href="#contact">Contact</a>
-        <a href="#">Staff Portal</a>
-    </div>
+  <div class="logo cyber-text">ULTRATEK</div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="#video-games">Video Games</a>
+    <a href="#experiences">Experiences</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="reservations.html">Reservations</a>
+    <a href="about.html">About</a>
+  </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero" id="home">
-    <h1>ULTRATEK GAMING HUB</h1>
-    <p>The ultimate gaming and entertainment experience at FUTA Northgate.</p>
-    <button onclick="document.getElementById('video-games').scrollIntoView({behavior:'smooth'})">
-        Explore
-    </button>
+<section class="hero">
+  <h1 class="cyber-text">ULTRATEK GAMING HUB</h1>
+  <p class="cyber-text">Play • Compete • Connect</p>
+  <button onclick="document.getElementById('video-games').scrollIntoView({behavior:'smooth'})" class="cyber-ripple">
+    Explore
+  </button>
 </section>
 
 <!-- VIDEO GAMES -->
-<h2 class="section-title" id="video-games">Video Games</h2>
-
+<h2 class="section-title cyber-text" id="video-games">Video Games</h2>
 <div class="grid">
+  <a class="card cyber-scan" href="games.html">
+    <h3 class="cyber-text">Console Games</h3>
+    <p>FIFA, Mortal Kombat, COD, eFootball — all your favorites on PS5 and Xbox.</p>
+  </a>
 
-    <div class="card">
-        <h3>FIFA</h3>
-        <p>Compete in intense football matches with friends and rivals.</p>
-    </div>
+  <a class="card cyber-scan" href="pc-lan.html">
+    <h3 class="cyber-text">PC LAN Gaming</h3>
+    <p>Multiplayer battles, co‑op missions, and esports sessions on high-performance rigs.</p>
+  </a>
 
-    <div class="card">
-        <h3>Mortal Kombat</h3>
-        <p>Face‑to‑face combat with brutal combos and electrifying finishers.</p>
-    </div>
-
-    <div class="card">
-        <h3>Call of Duty</h3>
-        <p>High‑intensity FPS battles with tactical gameplay and squad coordination.</p>
-    </div>
-
-    <div class="card">
-        <h3>eFootball</h3>
-        <p>Precision football simulation with realistic movement and strategy.</p>
-    </div>
-
+  <a class="card cyber-scan" href="vr.html">
+    <h3 class="cyber-text">Virtual Reality</h3>
+    <p>Immersive VR experiences that push the boundaries of gaming.</p>
+  </a>
 </div>
 
 <!-- EXPERIENCES -->
-<h2 class="section-title" id="experiences">Experiences</h2>
-
+<h2 class="section-title cyber-text" id="experiences">Experiences</h2>
 <div class="grid">
+  <a class="card cyber-scan" href="pool.html">
+    <h3 class="cyber-text">Pool (Billiards)</h3>
+    <p>Premium tables for relaxed games and friendly competitions.</p>
+  </a>
 
-    <div class="card">
-        <h3>Pool (Billiards)</h3>
-        <p>Premium pool tables for relaxed games and friendly competitions.</p>
-    </div>
+  <a class="card cyber-scan" href="table-tennis.html">
+    <h3 class="cyber-text">Table Tennis</h3>
+    <p>Fast-paced matches with pro-quality paddles and a dedicated play zone.</p>
+  </a>
 
-    <div class="card">
-        <h3>Table Tennis</h3>
-        <p>Fast-paced matches with pro-quality paddles and a dedicated play zone.</p>
-    </div>
+  <a class="card cyber-scan" href="board-games.html">
+    <h3 class="cyber-text">Board Games</h3>
+    <p>Chess • Scrabble • Group-friendly tabletop games.</p>
+  </a>
 
-    <div class="card">
-        <h3>PC LAN Gaming</h3>
-        <p>High-performance gaming PCs for multiplayer battles and esports sessions.</p>
-    </div>
+  <a class="card cyber-scan" href="big-screen.html">
+    <h3 class="cyber-text">Large Screen Soccer Viewing</h3>
+    <p>Watch Premier League and UCL matches on a massive screen.</p>
+  </a>
 
-    <div class="card">
-        <h3>Xbox & PS5 Consoles</h3>
-        <p>Next‑gen gaming stations featuring FIFA, Mortal Kombat, COD, and more.</p>
-    </div>
-
-    <div class="card">
-        <h3>Giant Scrabble</h3>
-        <p>A fun, oversized twist on a classic game — perfect for groups.</p>
-    </div>
-
-    <div class="card">
-        <h3>Large Screen Soccer Viewing</h3>
-        <p>Watch Premier League and UCL matches on a massive screen.</p>
-    </div>
-
-    <div class="card">
-        <h3>Group Parties</h3>
-        <p>Birthday packages, team hangouts, and custom group events.</p>
-    </div>
-
-</div>
-
-<!-- MEMBERSHIP -->
-<h2 class="section-title" id="membership">Membership</h2>
-
-<div class="grid">
-    <div class="card">
-        <h3>ULTRATEK Membership</h3>
-        <p>Exclusive perks, discounted rates, priority booking, and loyalty rewards.</p>
-    </div>
+  <a class="card cyber-scan" href="rewards.html">
+    <h3 class="cyber-text">Membership & Rewards</h3>
+    <p>Exclusive perks, loyalty bonuses, and priority access for regular players.</p>
+  </a>
 </div>
 
 <!-- CONTACT -->
-<h2 class="section-title" id="contact">Contact Us</h2>
-
+<h2 class="section-title cyber-text" id="contact">Contact Us</h2>
 <div class="grid">
+  <div class="card cyber-scan">
+    <h3 class="cyber-text">Location</h3>
+    <p>ULTRATEK Gaming Hub, FUTA Northgate</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.690..."
+      width="100%" height="200" style="border:0;" allowfullscreen loading="lazy">
+    </iframe>
+  </div>
 
-    <div class="card">
-        <h3>Location</h3>
-        <p>ULTRATEK Gaming Hub, FUTA Northgate</p>
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.690...YOUR_MAP_EMBED..."
-            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-    </div>
-
-    <div class="card">
-        <h3>Contact</h3>
-        <p><strong>Phone:</strong> <a href="tel:+234000000000">+234 000 000 0000</a></p>
-        <p><strong>WhatsApp:</strong> <a href="https://wa.me/234000000000">Chat on WhatsApp</a></p>
-        <p><strong>Email:</strong> ultratek@example.com</p>
-        <p><strong>Hours:</strong> 10am – 10pm daily</p>
-    </div>
-
+  <div class="card cyber-scan">
+    <h3 class="cyber-text">Contact</h3>
+    <p><strong>Phone:</strong> <a href="tel:+234000000000">+234 000 000 0000</a></p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/234000000000">Chat on WhatsApp</a></p>
+    <p><strong>Email:</strong> ultratekgames@gmail.com</p>
+    <p><strong>Hours:</strong> 10am – 10pm daily</p>
+  </div>
 </div>
 
 <!-- FOOTER -->
 <footer>
-    © 2025 ULTRATEK Gaming Hub — FUTA Northgate
+  © 2025 ULTRATEK Gaming Hub — FUTA Northgate
 </footer>
+
+<!-- FLOATING RESERVE BUTTON -->
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfGge1BpbVyg0XlDTpKlra4-35YWn0maGbH8NpaDLuLu1QE5w/viewform?usp=header" 
+   target="_blank" 
+   class="floating-reserve-btn cyber-ripple">
+   Reserve Now
+</a>
 
 </body>
 </html>
