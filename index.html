@@ -1,157 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ULTRATEK Games Hub</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ULTRATEK Games</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: #0d0d0f;
+        color: #e6e6e6;
+    }
+
+    /* NAVBAR */
+    nav {
+        background: rgba(0,0,0,0.7);
+        backdrop-filter: blur(10px);
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        border-bottom: 1px solid #222;
+    }
+    nav .logo {
+        font-size: 1.4rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #00eaff;
+    }
+    nav a {
+        color: #ccc;
+        margin-left: 25px;
+        text-decoration: none;
+        font-size: 0.95rem;
+    }
+    nav a:hover {
+        color: #00eaff;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        height: 60vh;
+        background: linear-gradient(135deg, #0d0d0f 0%, #11131a 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .hero h1 {
+        font-size: 3rem;
+        margin: 0;
+        color: #00eaff;
+        text-shadow: 0 0 20px rgba(0, 234, 255, 0.4);
+    }
+    .hero p {
+        margin-top: 15px;
+        font-size: 1.2rem;
+        max-width: 600px;
+        opacity: 0.8;
+    }
+    .hero button {
+        margin-top: 25px;
+        padding: 12px 28px;
+        background: #00eaff;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+        color: #000;
+        font-weight: 600;
+        transition: 0.2s;
+    }
+    .hero button:hover {
+        background: #00bcd4;
+    }
+
+    /* CARD GRID */
+    .section-title {
+        text-align: center;
+        margin-top: 60px;
+        font-size: 1.8rem;
+        color: #00eaff;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 25px;
+        padding: 40px;
+    }
+
+    .card {
+        background: #14161d;
+        padding: 25px;
+        border-radius: 10px;
+        border: 1px solid #1f222b;
+        transition: 0.25s;
+        cursor: pointer;
+    }
+    .card:hover {
+        transform: translateY(-6px);
+        border-color: #00eaff;
+        box-shadow: 0 0 20px rgba(0, 234, 255, 0.15);
+    }
+    .card h3 {
+        margin: 0;
+        color: #00eaff;
+        font-size: 1.3rem;
+    }
+    .card p {
+        margin-top: 10px;
+        opacity: 0.75;
+        line-height: 1.5;
+    }
+
+    /* FOOTER */
+    footer {
+        text-align: center;
+        padding: 30px;
+        margin-top: 40px;
+        border-top: 1px solid #222;
+        opacity: 0.6;
+        font-size: 0.9rem;
+    }
+</style>
 </head>
 
 <body>
 
-  <!-- HERO SECTION -->
-  <header class="hero">
-    <h1>🎮 ULTRATEK GAMES HUB</h1>
-    <p class="tagline">Play • Compete • Connect</p>
-  </header>
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">ULTRATEK</div>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Games</a>
+        <a href="#">Events</a>
+        <a href="#">Staff Portal</a>
+        <a href="#">QR Decoder</a>
+    </div>
+</nav>
 
-  <!-- INTRO -->
-  <section class="intro">
-    <p>Welcome to ULTRATEK Games Hub — a modern gaming, recreation, and social space designed for students and young creatives.</p>
-    <p>Whether you’re here to compete, relax, or connect with friends, ULTRATEK delivers premium gaming, fair pricing, and good vibes.</p>
-  </section>
+<!-- HERO -->
+<section class="hero">
+    <h1>ULTRATEK GAMES</h1>
+    <p>The digital arena built at FUTA Northgate. Play, compete, explore, and unlock the ULTRATEK experience.</p>
+    <button onclick="document.getElementById('games').scrollIntoView({behavior:'smooth'})">
+        Enter Arena
+    </button>
+</section>
 
-  <!-- QUICK ACTIONS -->
-  <section class="quick-actions">
-    <h2>🚀 Quick Actions</h2>
-    <ul>
-      <li>🎟️ Reserve a Gaming Station</li>
-      <li>🏆 View Tournaments & Events</li>
-      <li>🌟 Become a Brand Ambassador</li>
-    </ul>
-  </section>
+<!-- GAMES GRID -->
+<h2 class="section-title">Available Games</h2>
+<div class="grid" id="games">
+    <div class="card">
+        <h3>FIFA</h3>
+        <p>Compete in intense football matches with friends and rivals. Smooth gameplay, fast action.</p>
+    </div>
 
-  <!-- WHAT WE OFFER -->
-  <section class="offer">
-    <h2>🎮 What We Offer</h2>
+    <div class="card">
+        <h3>Mortal Kombat</h3>
+        <p>Face‑to‑face combat with brutal combos and electrifying finishers.</p>
+    </div>
 
-    <h3>Console Gaming</h3>
-    <ul>
-      <li>Dedicated console stations</li>
-      <li>Competitive & casual play</li>
-      <li>Comfortable, well-ventilated setup</li>
-    </ul>
+    <div class="card">
+        <h3>Call of Duty</h3>
+        <p>High‑intensity FPS battles with tactical gameplay and squad coordination.</p>
+    </div>
 
-    <h3>Board & Table Games</h3>
-    <ul>
-      <li>Chess</li>
-      <li>Scrabble</li>
-      <li>Pool table</li>
-      <li>Group-friendly games</li>
-    </ul>
+    <div class="card">
+        <h3>eFootball</h3>
+        <p>Precision football simulation with realistic movement and strategy.</p>
+    </div>
+</div>
 
-    <h3>Student Tech Services</h3>
-    <ul>
-      <li>Printing & photocopying</li>
-      <li>Scanning</li>
-      <li>Laminating & binding</li>
-    </ul>
-  </section>
-
-  <!-- RESERVATIONS -->
-  <section class="reservations">
-    <h2>📅 Reservations (Live)</h2>
-    <p>Gaming stations are booked through our online reservation system.</p>
-
-    <p><strong>👉 Reserve your slot here:</strong><br>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGge1BpbVyg0XlDTpKlra4-35YWn0maGbH8NpaDLuLu1QE5w/viewform" target="_blank">
-        Reservation Form
-      </a>
-    </p>
-
-    <h3>How it works</h3>
-    <ul>
-      <li>Fill the form</li>
-      <li>Choose your game & time</li>
-      <li>Show confirmation on arrival</li>
-      <li>Walk-ins accepted when slots are available</li>
-    </ul>
-  </section>
-
-  <!-- TOURNAMENTS -->
-  <section class="events">
-    <h2>🏆 Tournaments & Events</h2>
-    <ul>
-      <li>Console gaming tournaments</li>
-      <li>Board game competitions</li>
-      <li>Community game nights</li>
-    </ul>
-    <p>📌 Registration links will be posted here and on our socials.</p>
-  </section>
-
-  <!-- AMBASSADORS -->
-  <section class="ambassadors">
-    <h2>🌟 Brand Ambassador Program</h2>
-    <p>We’re building a team of energetic students to represent ULTRATEK on campus.</p>
-    <ul>
-      <li>Free or discounted gameplay</li>
-      <li>Early access to events</li>
-      <li>Recognition & special perks</li>
-    </ul>
-    <p>📌 Application opens soon</p>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section class="experience">
-    <h2>🏠 The ULTRATEK Experience</h2>
-    <ul>
-      <li>Clean, modern interior</li>
-      <li>Student-friendly pricing</li>
-      <li>Safe, supervised environment</li>
-      <li>Built for comfort and focus</li>
-    </ul>
-    <p>ULTRATEK is more than a gaming house — it’s a community hub.</p>
-  </section>
-
-  <!-- LOCATION -->
-  <section class="location">
-    <h2>📍 Location</h2>
-    <p>📍 FUTA Axis, Akure<br>(Exact address to be announced)</p>
-  </section>
-
-  <!-- HOURS -->
-  <section class="hours">
-    <h2>⏰ Opening Hours</h2>
-    <p>Daily<br>🕗 8:00 AM – 12:00 Midnight</p>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact">
-    <h2>📲 Connect With Us</h2>
-    <p>📸 Instagram: @ultratek_futa<br>
-       📧 Email: ultratekgames@gmail.com</p>
-  </section>
-
-  <!-- COMING SOON -->
-  <section class="coming-soon">
-    <h2>🔜 Coming Soon</h2>
-    <ul>
-      <li>Online membership system</li>
-      <li>Event calendars</li>
-      <li>Leaderboards</li>
-      <li>Themed tournament nights</li>
-    </ul>
-  </section>
-
-  <!-- TECH NOTE -->
-  <section class="tech-note">
-    <h2>⚙️ Tech Note (Internal)</h2>
-    <ul>
-      <li>Reservation system: Google Apps Script + Google Forms (LIVE)</li>
-      <li>Site: GitHub Pages compatible</li>
-      <li>Zero backend hosting required</li>
-    </ul>
-  </section>
+<!-- FOOTER -->
+<footer>
+    © 2025 ULTRATEK Gaming Hub — FUTA Northgate
+</footer>
 
 </body>
 </html>
