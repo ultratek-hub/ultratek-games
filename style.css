@@ -29,6 +29,13 @@ nav {
   z-index: 999;
 }
 
+.logo img {
+  height: 38px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 0 4px rgba(0, 234, 255, 0.35));
+}
+
 nav a {
   margin-left: 1.5rem;
   text-decoration: none;
@@ -40,17 +47,6 @@ nav a:hover {
   color: #00eaff;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #00eaff;
-}
-.logo img {
-  height: 38px;
-  width: auto;
-  display: block;
-  filter: drop-shadow(0 0 4px rgba(0, 234, 255, 0.4));
-}
 /* --------------------------------------------------
    HERO SECTION
 -------------------------------------------------- */
@@ -180,7 +176,6 @@ nav a:hover {
   transition: 0.25s ease;
 }
 
-/* Availability Colors */
 .timeslot.available {
   background: #1b1e27;
   border: 1px solid #00eaff;
@@ -201,7 +196,6 @@ nav a:hover {
   opacity: 0.6;
 }
 
-/* Hover Effects */
 .timeslot.available:hover {
   background: #00eaff;
   color: #000;
