@@ -1,153 +1,326 @@
-/* ===========================
-   Base Styles
-   =========================== */
+/* --------------------------------------------------
+   GLOBAL RESET
+-------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
 
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #0d0d0f;
-  color: #e6e6e6;
+  background: #0d0f15;
+  color: #d9e7ff;
+  line-height: 1.6;
 }
 
-h1, h2, h3 {
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: #00eaff;
-}
-
-/* ===========================
-   Navbar
-   =========================== */
-
+/* --------------------------------------------------
+   NAVBAR
+-------------------------------------------------- */
 nav {
-  background: rgba(0,0,0,0.7);
-  backdrop-filter: blur(10px);
-  padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 2rem;
+  background: #0f1118;
+  border-bottom: 1px solid #1f222b;
   position: sticky;
   top: 0;
-  z-index: 1000;
-  border-bottom: 1px solid #222;
-}
-
-nav .logo {
-  font-size: 1.4rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #00eaff;
+  z-index: 999;
 }
 
 nav a {
-  color: #ccc;
-  margin-left: 25px;
-  font-size: 0.95rem;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #9bbcff;
+  transition: 0.2s;
 }
 
 nav a:hover {
   color: #00eaff;
 }
 
-/* ===========================
-   Hero Section
-   =========================== */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
+/* --------------------------------------------------
+   HERO SECTION
+-------------------------------------------------- */
 .hero {
   text-align: center;
-  padding: 4rem 1rem;
-  background: linear-gradient(135deg, #0d0d0f 0%, #11131a 100%);
-  color: #fff;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: #00eaff;
-  text-shadow: 0 0 20px rgba(0, 234, 255, 0.4);
-}
-
-.hero p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: auto;
-  opacity: 0.8;
+  padding: 5rem 1rem;
+  background: linear-gradient(180deg, #0d0f15, #0f1118);
 }
 
 .hero button {
-  margin-top: 25px;
-  padding: 12px 28px;
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
   background: #00eaff;
   border: none;
   border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
   color: #000;
-  font-weight: 600;
+  font-weight: bold;
+  cursor: pointer;
   transition: 0.2s;
 }
 
 .hero button:hover {
   background: #00bcd4;
+  transform: translateY(-3px);
 }
 
-/* ===========================
-   Card Grid
-   =========================== */
-
-.section-title {
-  text-align: center;
-  margin-top: 60px;
-  font-size: 1.8rem;
-  color: #00eaff;
-}
-
+/* --------------------------------------------------
+   GRID + CARDS
+-------------------------------------------------- */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  padding: 40px;
+  gap: 1.5rem;
+  padding: 2rem;
 }
 
 .card {
   background: #14161d;
-  padding: 25px;
+  padding: 1.5rem;
   border-radius: 10px;
   border: 1px solid #1f222b;
-  transition: 0.25s;
-  cursor: pointer;
+  transition: 0.2s;
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
   border-color: #00eaff;
-  box-shadow: 0 0 20px rgba(0, 234, 255, 0.15);
 }
 
-.card h3 {
-  margin: 0;
+/* --------------------------------------------------
+   SECTION TITLES
+-------------------------------------------------- */
+.section-title {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* --------------------------------------------------
+   CALENDAR
+-------------------------------------------------- */
+.calendar-container {
+  max-width: 600px;
+  margin: auto;
+  background: #14161d;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #1f222b;
+  box-shadow: 0 0 20px rgba(0, 234, 255, 0.1);
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+.calendar-day {
+  padding: 15px;
+  background: #1b1e27;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+  animation: holoFade 0.6s ease forwards;
+}
+
+.calendar-day:hover {
+  background: #00eaff;
+  color: #000;
+  transform: translateY(-3px);
+}
+
+/* --------------------------------------------------
+   TIME SLOTS
+-------------------------------------------------- */
+.timeslot-container {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #14161d;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #1f222b;
+  box-shadow: 0 0 20px rgba(0, 234, 255, 0.1);
+}
+
+#timeslots {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.timeslot {
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.2s;
+  animation: holoFade 0.6s ease forwards;
+}
+
+/* Availability Colors */
+.timeslot.available {
+  background: #1b1e27;
+  border: 1px solid #00eaff;
   color: #00eaff;
-  font-size: 1.3rem;
+  animation: circuitPulse 1.8s infinite ease-in-out;
 }
 
-.card p {
-  margin-top: 10px;
-  opacity: 0.75;
-  line-height: 1.5;
+.timeslot.almost {
+  background: #332400;
+  border: 1px solid #ffcc00;
+  color: #ffcc00;
+  animation: flicker 1.5s infinite ease-in-out;
 }
 
-/* ===========================
-   Footer
-   =========================== */
+.timeslot.booked {
+  background: #2a0000;
+  border: 1px solid #ff4444;
+  color: #ff4444;
+  cursor: not-allowed;
+  opacity: 0.6;
+  animation: hazardPulse 1.5s infinite ease-in-out;
+}
 
+/* Hover Effects */
+.timeslot.available:hover {
+  background: #00eaff;
+  color: #000;
+  transform: translateY(-4px) scale(1.03);
+}
+
+/* --------------------------------------------------
+   FLOATING RESERVE BUTTON
+-------------------------------------------------- */
+.floating-reserve-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #00eaff;
+  color: #000;
+  padding: 14px 22px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  animation: reactorCore 3s infinite ease-in-out;
+  z-index: 9999;
+}
+
+/* --------------------------------------------------
+   CYBERPUNK EFFECTS
+-------------------------------------------------- */
+
+/* Hologram Fade */
+@keyframes holoFade {
+  0% { opacity: 0; transform: translateY(20px) scale(0.95); filter: blur(4px); }
+  60% { opacity: 0.7; transform: translateY(5px) scale(1.02); filter: blur(1px); }
+  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+
+/* Circuit Pulse */
+@keyframes circuitPulse {
+  0% { box-shadow: 0 0 4px #00eaff; }
+  50% { box-shadow: 0 0 18px #00eaff; }
+  100% { box-shadow: 0 0 4px #00eaff; }
+}
+
+/* Flicker */
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  40% { opacity: 0.6; }
+  60% { opacity: 0.8; }
+}
+
+/* Hazard Pulse */
+@keyframes hazardPulse {
+  0% { box-shadow: 0 0 4px #ff0033; }
+  50% { box-shadow: 0 0 18px #ff0033; }
+  100% { box-shadow: 0 0 4px #ff0033; }
+}
+
+/* Reactor Core Glow */
+@keyframes reactorCore {
+  0% { box-shadow: 0 0 10px #00eaff, inset 0 0 10px #00eaff; }
+  50% { box-shadow: 0 0 25px #00eaff, inset 0 0 25px #00eaff; }
+  100% { box-shadow: 0 0 10px #00eaff, inset 0 0 10px #00eaff; }
+}
+
+/* Cyber Text RGB Split */
+.cyber-text {
+  text-shadow:
+    0 0 5px #00eaff,
+    2px 0 3px rgba(255,0,0,0.4),
+    -2px 0 3px rgba(0,255,0,0.4);
+}
+
+/* Scanline Sweep */
+@keyframes scanSweep {
+  0% { background-position: -200px 0; }
+  100% { background-position: 200px 0; }
+}
+
+.cyber-scan {
+  background: linear-gradient(90deg, transparent, rgba(0,255,255,0.4), transparent);
+  background-size: 200px 100%;
+  animation: scanSweep 2s linear infinite;
+}
+
+/* Ripple Effect */
+.cyber-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.cyber-ripple:hover::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(0,255,255,0.4);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: ripple 0.6s ease-out;
+}
+
+@keyframes ripple {
+  from { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  to { opacity: 0; transform: translate(-50%, -50%) scale(20); }
+}
+
+/* Glitch Effect */
+@keyframes glitch {
+  0% { opacity: 1; transform: translate(0); }
+  20% { opacity: 0.8; transform: translate(-1px, 1px); }
+  40% { opacity: 1; transform: translate(1px, -1px); }
+  60% { opacity: 0.9; transform: translate(-1px, -1px); }
+  80% { opacity: 1; transform: translate(1px, 1px); }
+  100% { opacity: 1; transform: translate(0); }
+}
+
+.glitchy {
+  animation: glitch 0.4s steps(2, end) infinite;
+}
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
 footer {
   text-align: center;
-  padding: 30px;
-  margin-top: 40px;
-  border-top: 1px solid #222;
+  padding: 2rem;
   opacity: 0.6;
-  font-size: 0.9rem;
+  margin-top: 3rem;
 }
