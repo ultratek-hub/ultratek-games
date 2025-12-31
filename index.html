@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ULTRATEK Games</title>
+    <title>ULTRATEK Gaming Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,31 +13,32 @@
 <nav>
     <div class="logo">ULTRATEK</div>
     <div>
-        <a href="#">Home</a>
-        <a href="#">Games</a>
-        <a href="#">Experiences</a>
-        <a href="#">Membership</a>
+        <a href="#home">Home</a>
+        <a href="#video-games">Video Games</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#membership">Membership</a>
+        <a href="#contact">Contact</a>
         <a href="#">Staff Portal</a>
     </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
-    <h1>ULTRATEK GAMES</h1>
-    <p>The digital arena built at FUTA Northgate. Play, compete, explore, and unlock the ULTRATEK experience.</p>
-    <button onclick="document.getElementById('games').scrollIntoView({behavior:'smooth'})">
-        Enter Arena
+<section class="hero" id="home">
+    <h1>ULTRATEK GAMING HUB</h1>
+    <p>The ultimate gaming and entertainment experience at FUTA Northgate.</p>
+    <button onclick="document.getElementById('video-games').scrollIntoView({behavior:'smooth'})">
+        Explore
     </button>
 </section>
 
-<!-- GAMES SECTION -->
-<h2 class="section-title">Available Games</h2>
+<!-- VIDEO GAMES -->
+<h2 class="section-title" id="video-games">Video Games</h2>
 
-<div class="grid" id="games">
+<div class="grid">
 
     <div class="card">
         <h3>FIFA</h3>
-        <p>Compete in intense football matches with friends and rivals. Smooth gameplay, fast action.</p>
+        <p>Compete in intense football matches with friends and rivals.</p>
     </div>
 
     <div class="card">
@@ -57,14 +58,14 @@
 
 </div>
 
-<!-- EXPERIENCES SECTION -->
-<h2 class="section-title">ULTRATEK Experiences</h2>
+<!-- EXPERIENCES -->
+<h2 class="section-title" id="experiences">Experiences</h2>
 
 <div class="grid">
 
     <div class="card">
         <h3>Pool (Billiards)</h3>
-        <p>Premium pool tables for relaxed games, date nights, and friendly competitions.</p>
+        <p>Premium pool tables for relaxed games and friendly competitions.</p>
     </div>
 
     <div class="card">
@@ -74,32 +75,61 @@
 
     <div class="card">
         <h3>PC LAN Gaming</h3>
-        <p>High-performance gaming PCs for multiplayer battles, co‑op missions, and esports sessions.</p>
+        <p>High-performance gaming PCs for multiplayer battles and esports sessions.</p>
     </div>
 
     <div class="card">
         <h3>Xbox & PS5 Consoles</h3>
-        <p>Next‑gen gaming stations featuring FIFA, Mortal Kombat, COD, eFootball, and more.</p>
+        <p>Next‑gen gaming stations featuring FIFA, Mortal Kombat, COD, and more.</p>
     </div>
 
     <div class="card">
         <h3>Giant Scrabble</h3>
-        <p>A fun, oversized twist on a classic game — perfect for groups and photo moments.</p>
+        <p>A fun, oversized twist on a classic game — perfect for groups.</p>
     </div>
 
     <div class="card">
         <h3>Large Screen Soccer Viewing</h3>
-        <p>Watch Premier League, UCL, and live matches on a massive screen with stadium‑level energy.</p>
-    </div>
-
-    <div class="card">
-        <h3>Membership</h3>
-        <p>Exclusive perks, discounted rates, priority booking, and loyalty rewards for regular players.</p>
+        <p>Watch Premier League and UCL matches on a massive screen.</p>
     </div>
 
     <div class="card">
         <h3>Group Parties</h3>
-        <p>Birthday packages, team hangouts, and custom group events across multiple ULTRATEK zones.</p>
+        <p>Birthday packages, team hangouts, and custom group events.</p>
+    </div>
+
+</div>
+
+<!-- MEMBERSHIP -->
+<h2 class="section-title" id="membership">Membership</h2>
+
+<div class="grid">
+    <div class="card">
+        <h3>ULTRATEK Membership</h3>
+        <p>Exclusive perks, discounted rates, priority booking, and loyalty rewards.</p>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<h2 class="section-title" id="contact">Contact Us</h2>
+
+<div class="grid">
+
+    <div class="card">
+        <h3>Location</h3>
+        <p>ULTRATEK Gaming Hub, FUTA Northgate</p>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.690...YOUR_MAP_EMBED..."
+            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+    <div class="card">
+        <h3>Contact</h3>
+        <p><strong>Phone:</strong> <a href="tel:+234000000000">+234 000 000 0000</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/234000000000">Chat on WhatsApp</a></p>
+        <p><strong>Email:</strong> ultratek@example.com</p>
+        <p><strong>Hours:</strong> 10am – 10pm daily</p>
     </div>
 
 </div>
