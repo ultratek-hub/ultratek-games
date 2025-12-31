@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About ULTRATEK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">ULTRATEK</div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="games.html">Video Games</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="reservations.html">Reservations</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>ULTRATEK GAMES HUB</h1>
+  <p>Play • Compete • Connect</p>
+</section>
+
+<!-- ABOUT CONTENT -->
+<h2 class="section-title">Welcome to ULTRATEK</h2>
+
+<div class="grid">
+  <div class="card">
+    <p>
+      ULTRATEK Games Hub is a modern gaming, recreation, and hangout space built for students and young creatives.
+      Whether you’re here to compete, relax, or connect with friends, ULTRATEK is designed for good games, good vibes,
+      and great community.
+    </p>
+  </div>
+</div>
+
+<!-- QUICK ACTIONS -->
+<h2 class="section-title">Quick Actions</h2>
+<div class="grid">
+  <div class="card"><h3>Reserve a Gaming Station</h3></div>
+  <div class="card"><h3>Register for Tournaments & Events</h3></div>
+  <div class="card"><h3>Become a Brand Ambassador</h3></div>
+</div>
+
+<!-- WHAT YOU CAN DO -->
+<h2 class="section-title">What You Can Do Here</h2>
+<div class="grid">
+  <div class="card">
+    <h3>Console Gaming</h3>
+    <p>Multiple console stations • Competitive & casual play • Comfortable viewing setup</p>
+  </div>
+
+  <div class="card">
+    <h3>Board & Table Games</h3>
+    <p>Chess • Scrabble • Pool table • Group-friendly games</p>
+  </div>
+
+  <div class="card">
+    <h3>Tech & Print Services</h3>
+    <p>Printing • Photocopying • Scanning • Laminating • Binding • Quick student services</p>
+  </div>
+</div>
+
+<!-- TOURNAMENTS -->
+<h2 class="section-title">Tournaments & Events</h2>
+<div class="grid">
+  <div class="card">
+    <p>
+      ULTRATEK hosts console gaming tournaments, board game competitions, and friendly campus game nights.
+      <br><br>
+      <strong>Upcoming events:</strong><br>
+      Event registration links coming soon.
+    </p>
+  </div>
+</div>
+
+<!-- RESERVATIONS -->
+<h2 class="section-title">Reservations</h2>
+<div class="grid">
+  <div class="card">
+    <p>
+      You can reserve a console station, group gaming sessions, or tournament slots.
+      <br><br>
+      <strong>How reservations work:</strong><br>
+      Online form (coming soon) • Walk‑in bookings available
+    </p>
+  </div>
+</div>
+
+<!-- BRAND AMBASSADOR -->
+<h2 class="section-title">Brand Ambassador Program</h2>
+<div class="grid">
+  <div class="card">
+    <p>
+      Are you active on campus, passionate about gaming, and influential among friends?
+      Join the ULTRATEK Brand Ambassador Team.
+      <br><br>
+      <strong>Perks include:</strong><br>
+      Free or discounted play • Early access to events • Recognition & exclusive benefits
+      <br><br>
+      Application link coming soon.
+    </p>
+  </div>
+</div>
+
+<!-- EXPERIENCE -->
+<h2 class="section-title">The ULTRATEK Experience</h2>
+<div class="grid">
+  <div class="card">
+    <p>
+      Clean, modern interior • Student-friendly pricing • Safe & supervised space • Designed for comfort and focus
+      <br><br>
+      ULTRATEK is not just a gaming house — it’s a community space.
+    </p>
+  </div>
+</div>
+
+<!-- LOCATION -->
+<h2 class="section-title">Location</h2>
+<div class="grid">
+  <div class="card">
+    <p>📍 Aluta Market, Akure</p>
+  </div>
+</div>
+
+<!-- HOURS -->
+<h2 class="section-title">Opening Hours</h2>
+<div class="grid">
+  <div class="card">
+    <p>Daily<br>🕗 8:00 AM – 12:00 Midnight</p>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<h2 class="section-title">Connect With Us</h2>
+<div class="grid">
+  <div class="card">
+    <p>
+      📸 Instagram: @ultratek_futa<br>
+      📧 Email: ultratekgames@gmail.com
+    </p>
+  </div>
+</div>
+
+<!-- COMING SOON -->
+<h2 class="section-title">Coming Soon</h2>
+<div class="grid">
+  <div class="card">
+    <p>
+      Online reservations • Membership options • Leaderboards • Special themed tournament nights
+    </p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 ULTRATEK Gaming Hub — FUTA Northgate
+</footer>
+
+</body>
+</html>
