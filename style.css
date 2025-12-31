@@ -1,6 +1,4 @@
-/* --------------------------------------------------
-   GLOBAL RESET
--------------------------------------------------- */
+/* GLOBAL RESET */
 * {
   margin: 0;
   padding: 0;
@@ -9,202 +7,142 @@
 }
 
 body {
-  background: #0d0f15;
-  color: #d9e7ff;
+  background: #0d0d0d;
+  color: #e6e6e6;
   line-height: 1.6;
+  animation: fadeIn 0.8s ease forwards;
 }
 
-/* --------------------------------------------------
-   NAVBAR
--------------------------------------------------- */
+/* NAVBAR — Translucent Glass + Fade-In */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background: #0f1118;
-  border-bottom: 1px solid #1f222b;
+  padding: 14px 50px;
+  background: rgba(17, 17, 17, 0.75);   /* translucent */
+  backdrop-filter: blur(10px);          /* glass effect */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 100;
+  animation: fadeIn 0.8s ease forwards;
 }
 
-.logo img {
-  height: 38px;
+/* LOGO — Improved Size + Neon Glow on Hover */
+nav .logo img {
+  height: 58px;
   width: auto;
+  object-fit: contain;
   display: block;
-  filter: drop-shadow(0 0 4px rgba(0, 234, 255, 0.35));
+  margin-top: 4px;
+  transition: 0.25s ease;
 }
 
+nav .logo img:hover {
+  filter: drop-shadow(0 0 8px #00eaff);
+  transform: scale(1.05);
+}
+
+/* NAV LINKS */
 nav a {
-  margin-left: 1.5rem;
+  margin-left: 28px;
   text-decoration: none;
-  color: #9bbcff;
-  transition: 0.25s ease;
+  color: #ccc;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: 0.2s ease;
 }
 
 nav a:hover {
   color: #00eaff;
 }
 
-/* --------------------------------------------------
-   HERO SECTION
--------------------------------------------------- */
+/* HERO SECTION */
 .hero {
   text-align: center;
-  padding: 5rem 1rem;
-  background: linear-gradient(180deg, #0d0f15, #0f1118);
-  animation: fadeIn 0.8s ease;
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #111, #0d0d0d);
+}
+
+.cyber-text {
+  color: #00eaff;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.8;
 }
 
 .hero button {
-  margin-top: 1.5rem;
-  padding: 0.8rem 2rem;
+  margin-top: 25px;
+  padding: 12px 28px;
   background: #00eaff;
   border: none;
-  border-radius: 6px;
+  border-radius: 4px;
   color: #000;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.25s ease;
+  transition: 0.2s ease;
 }
 
 .hero button:hover {
   background: #00bcd4;
-  transform: translateY(-3px);
 }
 
-/* --------------------------------------------------
-   GRID + CARDS
--------------------------------------------------- */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-}
-
-.card {
-  background: #14161d;
-  padding: 1.5rem;
-  border-radius: 10px;
-  border: 1px solid #1f222b;
-  transition: 0.25s ease;
-  animation: fadeIn 0.6s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  border-color: #00eaff;
-  box-shadow: 0 0 12px rgba(0, 234, 255, 0.25);
-}
-
-/* --------------------------------------------------
-   SECTION TITLES
--------------------------------------------------- */
+/* SECTION TITLES */
 .section-title {
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
+  margin: 50px 0 25px;
   font-size: 2rem;
-  color: #e3f4ff;
-  animation: fadeIn 0.6s ease;
-}
-
-/* --------------------------------------------------
-   CALENDAR
--------------------------------------------------- */
-.calendar-container {
-  max-width: 600px;
-  margin: auto;
-  background: #14161d;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #1f222b;
-  box-shadow: 0 0 20px rgba(0, 234, 255, 0.08);
-  animation: fadeIn 0.6s ease;
-}
-
-#calendar {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 10px;
-  text-align: center;
-}
-
-.calendar-day {
-  padding: 15px;
-  background: #1b1e27;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.25s ease;
-}
-
-.calendar-day:hover {
-  background: #00eaff;
-  color: #000;
-  transform: translateY(-3px);
-}
-
-/* --------------------------------------------------
-   TIME SLOTS
--------------------------------------------------- */
-.timeslot-container {
-  max-width: 600px;
-  margin: 20px auto;
-  background: #14161d;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #1f222b;
-  box-shadow: 0 0 20px rgba(0, 234, 255, 0.08);
-  animation: fadeIn 0.6s ease;
-}
-
-#timeslots {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  margin-top: 15px;
-}
-
-.timeslot {
-  padding: 12px;
-  border-radius: 6px;
-  cursor: pointer;
-  text-align: center;
-  font-weight: bold;
-  transition: 0.25s ease;
-}
-
-.timeslot.available {
-  background: #1b1e27;
-  border: 1px solid #00eaff;
   color: #00eaff;
 }
 
-.timeslot.almost {
-  background: #332400;
-  border: 1px solid #ffcc00;
-  color: #ffcc00;
+/* GRID LAYOUT */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 0 40px 60px;
 }
 
-.timeslot.booked {
-  background: #2a0000;
-  border: 1px solid #ff4444;
-  color: #ff4444;
-  cursor: not-allowed;
-  opacity: 0.6;
+/* CARDS */
+.card {
+  background: #141414;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #1f1f1f;
+  transition: 0.25s ease;
+  text-decoration: none;
+  color: #e6e6e6;
 }
 
-.timeslot.available:hover {
-  background: #00eaff;
-  color: #000;
+.card:hover {
+  border-color: #00eaff;
   transform: translateY(-4px);
 }
 
-/* --------------------------------------------------
-   FLOATING RESERVE BUTTON
--------------------------------------------------- */
+.card h3 {
+  margin-bottom: 12px;
+  color: #00eaff;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #111;
+  border-top: 1px solid #222;
+  margin-top: 40px;
+  color: #777;
+}
+
+/* FLOATING RESERVE BUTTON */
 .floating-reserve-btn {
   position: fixed;
   bottom: 25px;
@@ -212,39 +150,31 @@ nav a:hover {
   background: #00eaff;
   color: #000;
   padding: 14px 22px;
-  border-radius: 50px;
+  border-radius: 6px;
   font-weight: bold;
-  font-size: 1rem;
   text-decoration: none;
-  animation: softGlow 3s infinite ease-in-out;
-  z-index: 9999;
-  transition: 0.25s ease;
+  box-shadow: 0 0 12px rgba(0, 234, 255, 0.4);
+  transition: 0.2s ease;
 }
 
 .floating-reserve-btn:hover {
-  transform: translateY(-4px);
+  background: #00bcd4;
 }
 
-/* --------------------------------------------------
-   ANIMATIONS
--------------------------------------------------- */
+/* EMBEDDED FORM */
+.form-container iframe {
+  border-radius: 8px;
+  border: 1px solid #1f1f1f;
+}
+
+/* PAGE FADE-IN ANIMATION */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes softGlow {
-  0% { box-shadow: 0 0 10px rgba(0, 234, 255, 0.3); }
-  50% { box-shadow: 0 0 22px rgba(0, 234, 255, 0.6); }
-  100% { box-shadow: 0 0 10px rgba(0, 234, 255, 0.3); }
-}
-
-/* --------------------------------------------------
-   FOOTER
--------------------------------------------------- */
-footer {
-  text-align: center;
-  padding: 2rem;
-  opacity: 0.6;
-  margin-top: 3rem;
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
