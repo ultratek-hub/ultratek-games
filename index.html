@@ -1,135 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>ULTRATEK Games</title>
-
-<style>
-    body {
-        margin: 0;
-        font-family: "Segoe UI", sans-serif;
-        background: #0d0d0f;
-        color: #e6e6e6;
-    }
-
-    /* NAVBAR */
-    nav {
-        background: rgba(0,0,0,0.7);
-        backdrop-filter: blur(10px);
-        padding: 15px 40px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        border-bottom: 1px solid #222;
-    }
-    nav .logo {
-        font-size: 1.4rem;
-        font-weight: 700;
-        letter-spacing: 2px;
-        color: #00eaff;
-    }
-    nav a {
-        color: #ccc;
-        margin-left: 25px;
-        text-decoration: none;
-        font-size: 0.95rem;
-    }
-    nav a:hover {
-        color: #00eaff;
-    }
-
-    /* HERO SECTION */
-    .hero {
-        height: 60vh;
-        background: linear-gradient(135deg, #0d0d0f 0%, #11131a 100%);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0 20px;
-    }
-    .hero h1 {
-        font-size: 3rem;
-        margin: 0;
-        color: #00eaff;
-        text-shadow: 0 0 20px rgba(0, 234, 255, 0.4);
-    }
-    .hero p {
-        margin-top: 15px;
-        font-size: 1.2rem;
-        max-width: 600px;
-        opacity: 0.8;
-    }
-    .hero button {
-        margin-top: 25px;
-        padding: 12px 28px;
-        background: #00eaff;
-        border: none;
-        border-radius: 6px;
-        font-size: 1rem;
-        cursor: pointer;
-        color: #000;
-        font-weight: 600;
-        transition: 0.2s;
-    }
-    .hero button:hover {
-        background: #00bcd4;
-    }
-
-    /* CARD GRID */
-    .section-title {
-        text-align: center;
-        margin-top: 60px;
-        font-size: 1.8rem;
-        color: #00eaff;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 25px;
-        padding: 40px;
-    }
-
-    .card {
-        background: #14161d;
-        padding: 25px;
-        border-radius: 10px;
-        border: 1px solid #1f222b;
-        transition: 0.25s;
-        cursor: pointer;
-    }
-    .card:hover {
-        transform: translateY(-6px);
-        border-color: #00eaff;
-        box-shadow: 0 0 20px rgba(0, 234, 255, 0.15);
-    }
-    .card h3 {
-        margin: 0;
-        color: #00eaff;
-        font-size: 1.3rem;
-    }
-    .card p {
-        margin-top: 10px;
-        opacity: 0.75;
-        line-height: 1.5;
-    }
-
-    /* FOOTER */
-    footer {
-        text-align: center;
-        padding: 30px;
-        margin-top: 40px;
-        border-top: 1px solid #222;
-        opacity: 0.6;
-        font-size: 0.9rem;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULTRATEK Games</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -140,9 +15,9 @@
     <div>
         <a href="#">Home</a>
         <a href="#">Games</a>
-        <a href="#">Events</a>
+        <a href="#">Experiences</a>
+        <a href="#">Membership</a>
         <a href="#">Staff Portal</a>
-        <a href="#">QR Decoder</a>
     </div>
 </nav>
 
@@ -155,9 +30,11 @@
     </button>
 </section>
 
-<!-- GAMES GRID -->
+<!-- GAMES SECTION -->
 <h2 class="section-title">Available Games</h2>
+
 <div class="grid" id="games">
+
     <div class="card">
         <h3>FIFA</h3>
         <p>Compete in intense football matches with friends and rivals. Smooth gameplay, fast action.</p>
@@ -177,6 +54,54 @@
         <h3>eFootball</h3>
         <p>Precision football simulation with realistic movement and strategy.</p>
     </div>
+
+</div>
+
+<!-- EXPERIENCES SECTION -->
+<h2 class="section-title">ULTRATEK Experiences</h2>
+
+<div class="grid">
+
+    <div class="card">
+        <h3>Pool (Billiards)</h3>
+        <p>Premium pool tables for relaxed games, date nights, and friendly competitions.</p>
+    </div>
+
+    <div class="card">
+        <h3>Table Tennis</h3>
+        <p>Fast-paced matches with pro-quality paddles and a dedicated play zone.</p>
+    </div>
+
+    <div class="card">
+        <h3>PC LAN Gaming</h3>
+        <p>High-performance gaming PCs for multiplayer battles, co‑op missions, and esports sessions.</p>
+    </div>
+
+    <div class="card">
+        <h3>Xbox & PS5 Consoles</h3>
+        <p>Next‑gen gaming stations featuring FIFA, Mortal Kombat, COD, eFootball, and more.</p>
+    </div>
+
+    <div class="card">
+        <h3>Giant Scrabble</h3>
+        <p>A fun, oversized twist on a classic game — perfect for groups and photo moments.</p>
+    </div>
+
+    <div class="card">
+        <h3>Large Screen Soccer Viewing</h3>
+        <p>Watch Premier League, UCL, and live matches on a massive screen with stadium‑level energy.</p>
+    </div>
+
+    <div class="card">
+        <h3>Membership</h3>
+        <p>Exclusive perks, discounted rates, priority booking, and loyalty rewards for regular players.</p>
+    </div>
+
+    <div class="card">
+        <h3>Group Parties</h3>
+        <p>Birthday packages, team hangouts, and custom group events across multiple ULTRATEK zones.</p>
+    </div>
+
 </div>
 
 <!-- FOOTER -->
