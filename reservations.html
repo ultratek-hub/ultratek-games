@@ -11,10 +11,12 @@
 
 <!-- NAVBAR -->
 <nav>
-  <div class="logo cyber-text">ULTRATEK</div>
+  <div class="logo">
+    <img src="logo.png" alt="ULTRATEK Logo">
+  </div>
   <div>
     <a href="index.html">Home</a>
-    <a href="games.html">Video Games</a>
+    <a href="games.html">Experiences</a>
     <a href="pricing.html">Pricing</a>
     <a href="reservations.html">Reservations</a>
     <a href="about.html">About</a>
@@ -23,117 +25,29 @@
 
 <!-- HERO -->
 <section class="hero">
-  <h1 class="cyber-text">Reserve Your Spot</h1>
-  <p class="cyber-text">Book console time, PC LAN sessions, group gaming, or tournament slots.</p>
+  <h1 class="cyber-text">Reservations</h1>
+  <p class="cyber-text">Book Your Experience Instantly</p>
 </section>
 
-<!-- HOW RESERVATIONS WORK -->
-<h2 class="section-title cyber-text">How Reservations Work</h2>
+<!-- FORM SECTION -->
+<h2 class="section-title">Reserve a Session</h2>
 
-<div class="grid">
-  <div class="card cyber-scan">
-    <h3 class="cyber-text">Instant Online Booking</h3>
-    <p>Use our Google Form to reserve a gaming station or group session instantly.</p>
-  </div>
-
-  <div class="card cyber-scan">
-    <h3 class="cyber-text">Walk‑In Reservations</h3>
-    <p>You can also walk in and book directly at the ULTRATEK front desk.</p>
-  </div>
-
-  <div class="card cyber-scan">
-    <h3 class="cyber-text">Group Bookings</h3>
-    <p>Perfect for birthdays, team hangouts, and special events.</p>
-  </div>
-</div>
-
-<!-- CALENDAR -->
-<h2 class="section-title cyber-text">Choose a Date</h2>
-
-<div class="calendar-container">
-  <div id="calendar"></div>
-</div>
-
-<!-- TIME SLOTS -->
-<h2 class="section-title cyber-text glitchy">Select a Time Slot</h2>
-
-<div class="timeslot-container">
-  <p id="selected-date" style="text-align:center; opacity:0.7;">Pick a date above</p>
-  <div id="timeslots"></div>
+<div class="form-container" style="max-width: 900px; margin: 0 auto;">
+  <iframe 
+    src="https://docs.google.com/forms/d/e/1FAIpQLSfGge1BpbVyg0XlDTpKlra4-35YWn0maGbH8NpaDLuLu1QE5w/viewform?embedded=true" 
+    width="100%" 
+    height="1200" 
+    frameborder="0" 
+    marginheight="0" 
+    marginwidth="0">
+    Loading…
+  </iframe>
 </div>
 
 <!-- FOOTER -->
 <footer>
   © 2025 ULTRATEK Gaming Hub — FUTA Northgate
 </footer>
-
-<!-- FLOATING RESERVE BUTTON -->
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfGge1BpbVyg0XlDTpKlra4-35YWn0maGbH8NpaDLuLu1QE5w/viewform?usp=header" 
-   target="_blank" 
-   class="floating-reserve-btn cyber-ripple">
-   Reserve Now
-</a>
-
-<!-- SCRIPTS -->
-<script>
-  // Generate calendar days (simple 30‑day month)
-  const calendar = document.getElementById("calendar");
-  const daysInMonth = 30;
-
-  for (let i = 1; i <= daysInMonth; i++) {
-    const day = document.createElement("div");
-    day.className = "calendar-day cyber-ripple";
-    day.textContent = i;
-
-    day.onclick = () => {
-      const date = "2025-01-" + String(i).padStart(2, "0");
-      loadTimeSlots(date);
-    };
-
-    calendar.appendChild(day);
-  }
-
-  // Time slot availability data
-  const timeslotData = {
-    "10:00 AM": "available",
-    "11:00 AM": "almost",
-    "12:00 PM": "booked",
-    "1:00 PM": "available",
-    "2:00 PM": "available",
-    "3:00 PM": "almost",
-    "4:00 PM": "booked",
-    "5:00 PM": "available",
-    "6:00 PM": "available",
-    "7:00 PM": "almost",
-    "8:00 PM": "available"
-  };
-
-  const timeslotsDiv = document.getElementById("timeslots");
-  const selectedDateText = document.getElementById("selected-date");
-
-  function loadTimeSlots(date) {
-    selectedDateText.textContent = "Selected Date: " + date;
-
-    timeslotsDiv.innerHTML = "";
-
-    Object.keys(timeslotData).forEach(time => {
-      const slot = document.createElement("div");
-      slot.className = "timeslot " + timeslotData[time] + " cyber-ripple";
-      slot.textContent = time;
-
-      if (timeslotData[time] !== "booked") {
-        slot.onclick = () => {
-          const formURL =
-            "https://docs.google.com/forms/d/e/1FAIpQLSfGge1BpbVyg0XlDTpKlra4-35YWn0maGbH8NpaDLuLu1QE5w/viewform?usp=header";
-
-          window.open(formURL, "_blank");
-        };
-      }
-
-      timeslotsDiv.appendChild(slot);
-    });
-  }
-</script>
 
 </body>
 </html>
